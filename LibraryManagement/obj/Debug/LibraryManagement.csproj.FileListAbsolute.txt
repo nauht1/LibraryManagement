@@ -1,0 +1,16 @@
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\LibraryManagement.exe
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\LibraryManagement.pdb
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\BALayer.dll
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\DBLayer.dll
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\BALayer.pdb
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\DBLayer.pdb
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj.AssemblyReference.cache
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj.SuggestedBindingRedirects.cache
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmNhanVien.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj.CoreCompileInputs.cache
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.exe
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.pdb

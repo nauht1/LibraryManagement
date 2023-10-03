@@ -1,0 +1,6 @@
+E:\UTE\Docs\DoAnCNTT\Source\DBLayer\bin\Debug\DBLayer.dll
+E:\UTE\Docs\DoAnCNTT\Source\DBLayer\bin\Debug\DBLayer.pdb
+E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.csproj.AssemblyReference.cache
+E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.csproj.CoreCompileInputs.cache
+E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.dll
+E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.pdb

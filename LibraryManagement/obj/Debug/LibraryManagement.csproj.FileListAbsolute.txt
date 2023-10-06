@@ -14,3 +14,20 @@ E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.exe
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.pdb
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.pdb
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\bin\Debug\BALayer.dll
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\bin\Debug\DBLayer.dll
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\bin\Debug\BALayer.pdb
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\bin\Debug\DBLayer.pdb
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.AssemblyReference.cache
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.frmNhanVien.resources
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CoreCompileInputs.cache
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
+D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.frmDocGia.resources

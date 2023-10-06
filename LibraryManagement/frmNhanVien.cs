@@ -77,7 +77,12 @@ namespace LibraryManagement
             txtMaNV.Text = dgvNhanVien.Rows[r].Cells["MaNhanVien"].Value.ToString();
             txtHoTen.Text = dgvNhanVien.Rows[r].Cells["HoTen"].Value.ToString();
             cboGioiTinh.Text = dgvNhanVien.Rows[r].Cells["GioiTinh"].Value.ToString();
-            txtNgaySinh.Text = dgvNhanVien.Rows[r].Cells["NgaySinh"].Value.ToString();
+
+            // DateTime 
+            DateTime dateTimeBirth = DateTime.Parse(dgvNhanVien.Rows[r].Cells["NgaySinh"].Value.ToString());
+            txtNgaySinh.Text = dateTimeBirth.ToString(@"MM\/dd\/yyyy");
+
+
             txtEmail.Text = dgvNhanVien.Rows[r].Cells["Email"].Value.ToString();
             txtSDT.Text = dgvNhanVien.Rows[r].Cells["SoDienThoai"].Value.ToString();
         }

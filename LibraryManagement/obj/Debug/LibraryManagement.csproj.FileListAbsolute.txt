@@ -14,3 +14,7 @@ E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.exe
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.pdb
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmMain.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmLogin.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\MetroFramework.dll
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\MetroFramework.Fonts.dll

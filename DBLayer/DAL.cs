@@ -14,6 +14,7 @@ namespace DBLayer
             "Initial Catalog = QLThuVien; " +
             "User ID = sa; " +
             "Password = 281003";
+
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

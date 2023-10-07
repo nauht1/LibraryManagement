@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnThongTin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.tileDocGia = new MetroFramework.Controls.MetroTile();
             this.tileDauSach = new MetroFramework.Controls.MetroTile();
             this.tileMuonTraSach = new MetroFramework.Controls.MetroTile();
-            this.btnDangXuat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,6 +74,18 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Location = new System.Drawing.Point(69, 502);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(177, 43);
+            this.btnDangXuat.TabIndex = 10;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
             // 
             // btnThongTin
             // 
@@ -247,6 +259,7 @@
             this.tileNhanVien.TileImage = ((System.Drawing.Image)(resources.GetObject("tileNhanVien.TileImage")));
             this.tileNhanVien.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileNhanVien.UseTileImage = true;
+            this.tileNhanVien.Click += new System.EventHandler(this.tileNhanVien_Click);
             // 
             // tileDocGia
             // 
@@ -297,18 +310,6 @@
             this.tileMuonTraSach.TileImage = ((System.Drawing.Image)(resources.GetObject("tileMuonTraSach.TileImage")));
             this.tileMuonTraSach.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileMuonTraSach.UseTileImage = true;
-            // 
-            // btnDangXuat
-            // 
-            this.btnDangXuat.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangXuat.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangXuat.Location = new System.Drawing.Point(69, 502);
-            this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(177, 43);
-            this.btnDangXuat.TabIndex = 10;
-            this.btnDangXuat.Text = "Đăng xuất";
-            this.btnDangXuat.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 

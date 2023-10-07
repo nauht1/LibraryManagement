@@ -1,4 +1,4 @@
 ERD.docx
 .vs
-BALayer
-DBLayer
+BALayer\bin 
+DBLayer\bin

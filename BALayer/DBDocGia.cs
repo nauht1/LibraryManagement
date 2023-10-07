@@ -27,6 +27,16 @@ namespace BALayer
         public bool ThemDocGia(ref string err, string hoTen,
     DateTime ngaySinh, string diaChi, string soDienThoai, string CCCD)
         {
+            if (soDienThoai.Length != 10)
+            {
+                err = "So dien thoai khong hop le!";
+                return false;
+            }
+            else if (CCCD.Length != 10)
+            {
+                err = "CCCD khong hop le!";
+                return false;
+            }
             return db.MyExecuteNonQuery("spThemDocGia", CommandType.StoredProcedure, ref err,
             new SqlParameter("@hoTen", hoTen),
             new SqlParameter("@ngaySinh", ngaySinh),
@@ -37,6 +47,16 @@ namespace BALayer
         public bool CapNhatDocGia(ref string err,int maDocGia, string hoTen,
     DateTime ngaySinh, string diaChi, string soDienThoai, string CCCD)
         {
+            if (soDienThoai.Length != 10)
+            {
+                err = "So dien thoai khong hop le!";
+                return false;
+            }
+            else if (CCCD.Length != 10)
+            {
+                err = "CCCD khong hop le!";
+                return false;
+            }
             return db.MyExecuteNonQuery("spCapNhatDocGia", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@maDocGia", maDocGia),
             new SqlParameter("@hoTen", hoTen),

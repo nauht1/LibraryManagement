@@ -4,3 +4,9 @@ E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.csproj.AssemblyReference.c
 E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.csproj.CoreCompileInputs.cache
 E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.dll
 E:\UTE\Docs\DoAnCNTT\Source\DBLayer\obj\Debug\DBLayer.pdb
+D:\Visual Studio Code\LibraryManagement\DBLayer\bin\Debug\DBLayer.dll
+D:\Visual Studio Code\LibraryManagement\DBLayer\bin\Debug\DBLayer.pdb
+D:\Visual Studio Code\LibraryManagement\DBLayer\obj\Debug\DBLayer.csproj.AssemblyReference.cache
+D:\Visual Studio Code\LibraryManagement\DBLayer\obj\Debug\DBLayer.csproj.CoreCompileInputs.cache
+D:\Visual Studio Code\LibraryManagement\DBLayer\obj\Debug\DBLayer.dll
+D:\Visual Studio Code\LibraryManagement\DBLayer\obj\Debug\DBLayer.pdb

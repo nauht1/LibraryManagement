@@ -40,7 +40,13 @@ namespace LibraryManagement
         private void tileNhanVien_Click(object sender, EventArgs e)
         {
             frmNhanVien frm = new frmNhanVien();
-            frm.Show();
+            frm.ShowDialog();
+        }
+
+        private void tileDocGia_Click(object sender, EventArgs e)
+        {
+            frmDocGia frm = new frmDocGia();
+            frm.ShowDialog();
         }
     }
 }

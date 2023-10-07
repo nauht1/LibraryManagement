@@ -47,7 +47,9 @@ namespace LibraryManagement
                 if (f)
                 {
                     frmMain frm = new frmMain();
-                    frm.Show();
+                    this.Hide();
+                    frm.ShowDialog();
+                    this.Close();
                 }
                 else
                 {

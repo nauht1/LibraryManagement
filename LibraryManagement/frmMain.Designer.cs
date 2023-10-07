@@ -276,6 +276,7 @@
             this.tileDocGia.TileImage = ((System.Drawing.Image)(resources.GetObject("tileDocGia.TileImage")));
             this.tileDocGia.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileDocGia.UseTileImage = true;
+            this.tileDocGia.Click += new System.EventHandler(this.tileDocGia_Click);
             // 
             // tileDauSach
             // 

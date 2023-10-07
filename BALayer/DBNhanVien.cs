@@ -27,6 +27,11 @@ namespace BALayer
         public bool ThemNhanVien(ref string err, string hoTen, string gioiTinh, 
             DateTime ngaySinh, string email, string soDienThoai)
         {
+            if (soDienThoai.Length != 10)
+            {
+                err = "So dien thoai khong hop le!";
+                return false;
+            }
             return db.MyExecuteNonQuery("spThemNhanVien", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@hoTen", hoTen),
                 new SqlParameter("@gioiTinh", gioiTinh),
@@ -37,6 +42,11 @@ namespace BALayer
         public bool CapNhatNhanVien(ref string err, int maNhanVien, string hoTen, string gioiTinh,
             DateTime ngaySinh, string email, string soDienThoai)
         {
+            if (soDienThoai.Length != 10)
+            {
+                err = "So dien thoai khong hop le!";
+                return false;
+            }
             return db.MyExecuteNonQuery("spCapNhatNhanVien", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@maNhanVien", maNhanVien),
                 new SqlParameter("@hoTen", hoTen),
@@ -49,6 +59,12 @@ namespace BALayer
         {
             return db.MyExecuteNonQuery("spXoaNhanVien", CommandType.StoredProcedure,
                 ref err, new SqlParameter("@maNhanVien", maNhanVien));
+        }
+        public bool checkConstraints(string text)
+        {
+            if (text.Length == 10)
+                return true;
+            return false;
         }
     }
 }

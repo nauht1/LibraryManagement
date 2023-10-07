@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="DBDocGia.cs" />
+    <Compile Include="DBTaiKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

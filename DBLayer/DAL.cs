@@ -10,12 +10,11 @@ namespace DBLayer
 {
     public class DAL
     {
-        string sqlStringConnection = "Data Source=DESKTOP-SCFTBIO\\KHAI;" +
-            "Initial Catalog=QLThuVien;Integrated Security=True";
-            //"Data Source = DESKTOP-ACER\\THUAN; " +
-            //"Initial Catalog = QLThuVien; " +
-            //"User ID = sa; " +
-            //"Password = 281003";
+        string sqlStringConnection = "Data Source = DESKTOP-ACER\\THUAN; " +
+            "Initial Catalog = QLThuVien; " +
+            "User ID = sa; " +
+            "Password = 281003";
+
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

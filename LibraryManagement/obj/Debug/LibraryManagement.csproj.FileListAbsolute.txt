@@ -31,3 +31,8 @@ D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManag
 D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
 D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
 D:\Visual Studio Code\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.frmDocGia.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmMain.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmLogin.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\MetroFramework.dll
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\MetroFramework.Fonts.dll
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmDocGia.resources

@@ -29,7 +29,8 @@ namespace LibraryManagement
 
         private void tilePhieuMoThe_Click(object sender, EventArgs e)
         {
-
+            frmQLTheThuVien frm = new frmQLTheThuVien();
+            frm.ShowDialog();
         }
 
         private void tileNhanVien_Click(object sender, EventArgs e)

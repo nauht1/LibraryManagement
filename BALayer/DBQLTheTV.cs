@@ -9,29 +9,35 @@ using System.Threading.Tasks;
 
 namespace BALayer
 {
-    public class DBPQLTheTV
+    public class DBQLTheTV
     {
         DAL db = null;
-        public DBPQLTheTV()
+        public DBQLTheTV()
         {
             db = new DAL();
         }
-        public DataSet LayToanBoPhieuMoThe()
+        public DataSet LayPhieuMoThe()
         {
             return db.ExecuteQueryDataSet("Select * from PhieuMoThe", CommandType.Text, null);
         }
-        public bool ThemPhieuMoThe(ref string err, int maDocgia, int maPhieuMoThe, DateTime ngayLap)
+        public bool ThemPhieuMoThe(ref string err, int maDocGia, int maNhanVien, DateTime ngayLap)
         {
+
             return db.MyExecuteNonQuery("spThemPhieuMoThe", CommandType.StoredProcedure, ref err,
-                new SqlParameter("@maDocgia", maDocgia),
-                new SqlParameter("@maPhieuMoThe", maPhieuMoThe),
+                new SqlParameter("@maDocGia", maDocGia),
+                new SqlParameter("@maNhanVien", maNhanVien),
                 new SqlParameter("@ngayLap", ngayLap));
         }
+
         public bool CapNhatPhieuMoThe(ref string err, int maPhieuMo)
         {
+
             return db.MyExecuteNonQuery("spCapNhatPhieuMoThe", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@maPhieuMo", maPhieuMo));
         }
+
+
+
 
         /// TheThuVien
         public DataSet LayToanBoTheThuVien()
@@ -41,6 +47,17 @@ namespace BALayer
         public DataSet LayTheThuVien()
         {
             return db.ExecuteQueryDataSet("Select * from viewTheThuVien", CommandType.Text, null);
+        }
+        public bool CapNhatTheThuVien(ref string err, int maThe)
+        {
+            return db.MyExecuteNonQuery("spCapNhatPhieuMoThe", CommandType.StoredProcedure, ref err,
+            new SqlParameter("@maThe", maThe));
+        }
+
+        public bool GiaHanTheThuVien(ref string err, int maThe)
+        {
+            return db.MyExecuteNonQuery("spGiaHanTheThuVien", CommandType.StoredProcedure, ref err,
+            new SqlParameter("@maThe", maThe));
         }
     }
 }

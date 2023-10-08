@@ -126,5 +126,10 @@ namespace DBLayer
             }
             return obj;
         }
+
+        //public int ExecuteScalar(string query, CommandType text, SqlParameter[] parameters)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

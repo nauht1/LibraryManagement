@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tilePhieuNhap = new MetroFramework.Controls.MetroTile();
             this.tileTaiKhoan = new MetroFramework.Controls.MetroTile();
-            this.titleChucVu = new MetroFramework.Controls.MetroTile();
             this.tileTacGia = new MetroFramework.Controls.MetroTile();
             this.tileKeSach = new MetroFramework.Controls.MetroTile();
             this.tileTheThuVien = new MetroFramework.Controls.MetroTile();
@@ -86,6 +85,7 @@
             this.btnDangXuat.TabIndex = 10;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnThongTin
             // 
@@ -98,6 +98,7 @@
             this.btnThongTin.TabIndex = 10;
             this.btnThongTin.Text = "  Thông tin cá nhân";
             this.btnThongTin.UseVisualStyleBackColor = false;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click_1);
             // 
             // pictureBox1
             // 
@@ -163,21 +164,6 @@
             this.tileTaiKhoan.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileTaiKhoan.UseTileImage = true;
             this.tileTaiKhoan.Click += new System.EventHandler(this.tileTaiKhoan_Click);
-            // 
-            // titleChucVu
-            // 
-            this.titleChucVu.BackColor = System.Drawing.Color.SteelBlue;
-            this.titleChucVu.CustomBackground = true;
-            this.titleChucVu.CustomForeColor = true;
-            this.titleChucVu.ForeColor = System.Drawing.Color.White;
-            this.titleChucVu.Location = new System.Drawing.Point(558, 408);
-            this.titleChucVu.Name = "titleChucVu";
-            this.titleChucVu.Size = new System.Drawing.Size(140, 138);
-            this.titleChucVu.TabIndex = 77;
-            this.titleChucVu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.titleChucVu.TileImage = ((System.Drawing.Image)(resources.GetObject("titleChucVu.TileImage")));
-            this.titleChucVu.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleChucVu.UseTileImage = true;
             // 
             // tileTacGia
             // 
@@ -319,7 +305,6 @@
             this.ClientSize = new System.Drawing.Size(866, 568);
             this.Controls.Add(this.tilePhieuNhap);
             this.Controls.Add(this.tileTaiKhoan);
-            this.Controls.Add(this.titleChucVu);
             this.Controls.Add(this.tileTacGia);
             this.Controls.Add(this.tileKeSach);
             this.Controls.Add(this.tileTheThuVien);
@@ -349,20 +334,19 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroTile tilePhieuNhap;
         public MetroFramework.Controls.MetroTile tileTaiKhoan;
-        public MetroFramework.Controls.MetroTile titleChucVu;
-        private MetroFramework.Controls.MetroTile tileTacGia;
-        private MetroFramework.Controls.MetroTile tileKeSach;
-        private MetroFramework.Controls.MetroTile tileTheThuVien;
-        private MetroFramework.Controls.MetroTile tilePhieuViPham;
         public MetroFramework.Controls.MetroTile tileNhanVien;
-        private MetroFramework.Controls.MetroTile tileDocGia;
-        private MetroFramework.Controls.MetroTile tileDauSach;
-        private MetroFramework.Controls.MetroTile tileMuonTraSach;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnThongTin;
         private System.Windows.Forms.Button btnDangXuat;
+        public MetroFramework.Controls.MetroTile tilePhieuNhap;
+        public MetroFramework.Controls.MetroTile tileTacGia;
+        public MetroFramework.Controls.MetroTile tileKeSach;
+        public MetroFramework.Controls.MetroTile tileTheThuVien;
+        public MetroFramework.Controls.MetroTile tilePhieuViPham;
+        public MetroFramework.Controls.MetroTile tileDocGia;
+        public MetroFramework.Controls.MetroTile tileDauSach;
+        public MetroFramework.Controls.MetroTile tileMuonTraSach;
     }
 }

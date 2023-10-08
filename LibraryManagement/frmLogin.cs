@@ -16,7 +16,7 @@ namespace LibraryManagement
     public partial class frmLogin : Form
     {
         public static int maNhanVien;
-        private string username;
+        public static string username;
         private string password;
         DBTaiKhoan dbTaiKhoan;
         public frmLogin()
@@ -43,13 +43,23 @@ namespace LibraryManagement
             string err = "";
             try
             {
-                f = dbTaiKhoan.KiemTraiKhoan(ref err, username, password);
+                f = dbTaiKhoan.KiemTraTaiKhoan(ref err, username, password);
                 if (f)
                 {
                     frmMain frm = new frmMain();
-                    this.Hide();
-                    frm.ShowDialog();
-                    this.Close();
+                    maNhanVien = dbTaiKhoan.LayMaNhanVien(ref err, username);
+                    if (maNhanVien != -1)
+                    {
+                        string quyen = dbTaiKhoan.KiemTraQuyen(ref err, username);
+                        if (quyen == "NhanVien")
+                        {
+                            frm.tileNhanVien.Visible = false;
+                            frm.tileTaiKhoan.Visible = false;
+                        }
+                        this.Hide();
+                        frm.ShowDialog();
+                        this.Close();
+                    }
                 }
                 else
                 {

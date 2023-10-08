@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace BALayer
 {
-    public class DBPhieuMoThe
+    public class DBPQLTheTV
     {
         DAL db = null;
-        public DBPhieuMoThe()
+        public DBPQLTheTV()
         {
             db = new DAL();
         }
@@ -31,6 +31,16 @@ namespace BALayer
         {
             return db.MyExecuteNonQuery("spCapNhatPhieuMoThe", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@maPhieuMo", maPhieuMo));
+        }
+
+        /// TheThuVien
+        public DataSet LayToanBoTheThuVien()
+        {
+            return db.ExecuteQueryDataSet("Select * from TheThuVien", CommandType.Text, null);
+        }
+        public DataSet LayTheThuVien()
+        {
+            return db.ExecuteQueryDataSet("Select * from viewTheThuVien", CommandType.Text, null);
         }
     }
 }

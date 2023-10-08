@@ -2,7 +2,7 @@ ERD.docx
 .vs
 \BALayer\bin
 \DBLayer\bin
-\BALayer\bin\obj
-\DBLayer\bin\obj
+\BALayer\obj
+\DBLayer\obj
 \LibraryManagement\.vs
 \LibraryManagement\obj\

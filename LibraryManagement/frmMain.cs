@@ -32,11 +32,6 @@ namespace LibraryManagement
 
         }
 
-        private void btnThongTin_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tileNhanVien_Click(object sender, EventArgs e)
         {
             frmNhanVien frm = new frmNhanVien();
@@ -46,6 +41,19 @@ namespace LibraryManagement
         private void tileDocGia_Click(object sender, EventArgs e)
         {
             frmDocGia frm = new frmDocGia();
+            frm.ShowDialog();
+        }
+
+        private void btnThongTin_Click_1(object sender, EventArgs e)
+        {
+            frmThongTinCaNhan frm = new frmThongTinCaNhan();
+            frm.ShowDialog();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            frmLogin frm = new frmLogin();
+            this.Hide();
             frm.ShowDialog();
         }
     }

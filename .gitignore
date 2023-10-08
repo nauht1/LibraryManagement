@@ -1,0 +1,8 @@
+ERD.docx
+.vs
+\BALayer\bin
+\DBLayer\bin
+\BALayer\obj
+\DBLayer\obj
+\LibraryManagement\.vs
+\LibraryManagement\obj\

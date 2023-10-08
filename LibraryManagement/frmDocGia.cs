@@ -62,10 +62,9 @@ namespace LibraryManagement
 
                 dgvDocGia_CellClick(null, null);
             }
-            catch (Exception ex)
+            catch
             {
-                //MessageBox.Show("Có lỗi!!!", "Thông báo");
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Có lỗi!!!", "Thông báo");
             }
 
         }

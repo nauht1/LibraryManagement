@@ -2,3 +2,5 @@ ERD.docx
 .vs
 \BALayer\bin
 \DBLayer\bin
+\LibraryManagement\.vs
+\LibraryManagement\obj\

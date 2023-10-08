@@ -36,3 +36,4 @@ E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmLog
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\MetroFramework.dll
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\bin\Debug\MetroFramework.Fonts.dll
 E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmDocGia.resources
+E:\UTE\Docs\DoAnCNTT\Source\LibraryManagement\obj\Debug\LibraryManagement.frmThongTinCaNhan.resources

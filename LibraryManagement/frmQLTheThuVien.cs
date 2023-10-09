@@ -14,11 +14,10 @@ namespace LibraryManagement
 {
     public partial class frmQLTheThuVien : Form
     {
+        private int maNV = frmLogin.maNhanVien;
         DataTable dtPhieuMoThe = null;
         DataTable dtTheThuVien = null;
-
-
-        int maNV = 3;
+        
 
         DBQLTheTV dbQLTheTV;
         public frmQLTheThuVien()

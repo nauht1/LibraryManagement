@@ -18,6 +18,10 @@ namespace BALayer
         }
         public DataSet LayPhieuMoThe()
         {
+            return db.ExecuteQueryDataSet("Select * from PhieuMoThe Where TrangThai = 'ChuaCap'", CommandType.Text, null);
+        }
+        public DataSet LayToanBoPhieuMoThe()
+        {
             return db.ExecuteQueryDataSet("Select * from PhieuMoThe", CommandType.Text, null);
         }
         public bool ThemPhieuMoThe(ref string err, int maDocGia, int maNhanVien, DateTime ngayLap)

@@ -404,7 +404,6 @@
         #endregion
 
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtNgaySinh;
         private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.Button btnHuy;
@@ -431,5 +430,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn CCCD;
+        public System.Windows.Forms.Panel panel1;
     }
 }

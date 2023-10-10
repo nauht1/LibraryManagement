@@ -30,25 +30,25 @@ namespace LibraryManagement
         private void tilePhieuMoThe_Click(object sender, EventArgs e)
         {
             frmQLTheThuVien frm = new frmQLTheThuVien();
-            frm.ShowDialog();
+            frm.Show();
         }
 
         private void tileNhanVien_Click(object sender, EventArgs e)
         {
             frmNhanVien frm = new frmNhanVien();
-            frm.ShowDialog();
+            frm.Show();
         }
 
         private void tileDocGia_Click(object sender, EventArgs e)
         {
             frmDocGia frm = new frmDocGia();
-            frm.ShowDialog();
+            frm.Show();
         }
 
         private void btnThongTin_Click_1(object sender, EventArgs e)
         {
             frmThongTinCaNhan frm = new frmThongTinCaNhan();
-            frm.ShowDialog();
+            frm.Show();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)

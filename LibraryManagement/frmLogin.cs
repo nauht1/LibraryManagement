@@ -66,9 +66,9 @@ namespace LibraryManagement
                     MessageBox.Show("Tên tài khoản hoặc mật khẩu sai rồi!");
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Đăng nhập thất bại!!\n\r" + "Lỗi:" + err);
+                MessageBox.Show("Đăng nhập thất bại!!\n\r" + "Lỗi:" + ex.Message);
             }
         }
 

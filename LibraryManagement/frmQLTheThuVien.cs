@@ -37,7 +37,7 @@ namespace LibraryManagement
                 /// DataTable PhieuMoThe
                 dtPhieuMoThe = new DataTable();
                 dtPhieuMoThe.Clear();
-                dtPhieuMoThe = dbQLTheTV.LayPhieuMoThe().Tables[0];
+                dtPhieuMoThe = dbQLTheTV.LayToanBoPhieuMoThe().Tables[0];
                 dgvQLThe.DataSource = dtPhieuMoThe;
 
                 dgvQLThe.AutoResizeColumns();
@@ -59,12 +59,9 @@ namespace LibraryManagement
                 btnCapThe.Enabled = true;
                 btnReload.Enabled = true;
                 btnThem.Enabled = true;
-
+                btnGiaHan.Enabled = true;  
                 btnLuu.Enabled = false;
                 btnHuy.Enabled = false;
-
-
-
 
                 /// DataTable TheThuVien
                 dtTheThuVien = new DataTable();
@@ -93,12 +90,12 @@ namespace LibraryManagement
                 btnReload.Enabled = true;
                 btnGiaHan.Enabled = true;
 
-
+                dgvQLThe.Enabled = true;
 
             }
-            catch
+            catch (SqlException ex)
             {
-                MessageBox.Show("Có lỗi!!!", "Thông báo");
+                MessageBox.Show(ex.Message, "Thông báo");
             }
 
         }
@@ -129,6 +126,8 @@ namespace LibraryManagement
 
                 DateTime dateTimeNgayHetHan = DateTime.Parse(dgvTheThuVien.Rows[r2].Cells["NgayHetHan"].Value.ToString());
                 txtNgayHetHan.Text = dateTimeNgayHetHan.ToString(@"MM\/dd\/yyyy");
+
+                btnCapThe.Enabled = false;
             }
             else
             {
@@ -136,6 +135,7 @@ namespace LibraryManagement
                 txtMaDG.ResetText();
                 txtNgayCap.ResetText();
                 txtNgayHetHan.ResetText();
+                btnCapThe.Enabled = true;
             }
 
         }
@@ -148,11 +148,27 @@ namespace LibraryManagement
             txtMaDG.Text = dgvTheThuVien.Rows[r2].Cells["MaDG"].Value.ToString();
 
             // DateTime 
-            DateTime dateTimeNgayCap = DateTime.Parse(dgvTheThuVien.Rows[r2].Cells["NgayCap"].Value.ToString());
-            txtNgayCap.Text = dateTimeNgayCap.ToString(@"MM\/dd\/yyyy");
+            if (dgvTheThuVien.Rows[r2].Cells["NgayCap"].Value.ToString() != null &&
+                !string.IsNullOrEmpty(dgvTheThuVien.Rows[r2].Cells["NgayCap"].Value.ToString()))
+            {
+                DateTime dateTimeNgayCap = DateTime.Parse(dgvTheThuVien.Rows[r2].Cells["NgayCap"].Value.ToString());
+                txtNgayCap.Text = dateTimeNgayCap.ToString(@"MM\/dd\/yyyy");
+            }
+            else
+            {
+                txtNgayCap.Text = "NULL";
+            }
 
-            DateTime dateTimeNgayHetHan = DateTime.Parse(dgvTheThuVien.Rows[r2].Cells["NgayHetHan"].Value.ToString());
-            txtNgayHetHan.Text = dateTimeNgayHetHan.ToString(@"MM\/dd\/yyyy");
+            if (dgvTheThuVien.Rows[r2].Cells["NgayHetHan"].Value.ToString() != null &&
+                !string.IsNullOrEmpty(dgvTheThuVien.Rows[r2].Cells["NgayHetHan"].Value.ToString()))
+            {
+                DateTime dateTimeNgayHetHan = DateTime.Parse(dgvTheThuVien.Rows[r2].Cells["NgayHetHan"].Value.ToString());
+                txtNgayHetHan.Text = dateTimeNgayHetHan.ToString(@"MM\/dd\/yyyy");
+            }
+            else
+            {
+                txtNgayHetHan.Text = "NULL";
+            }
 
             txtMaPhieuMo.ResetText();
             txtMaDocGia.ResetText();
@@ -170,7 +186,6 @@ namespace LibraryManagement
             txtTrangThai.ResetText();
 
             txtMaDocGia.Enabled = true;
-            txtNgayLap.Enabled = true;
 
             txtMaNV.Text = maNV.ToString();
             txtNgayLap.Text = DateTime.Now.ToString(@"MM\/dd\/yyyy");
@@ -181,9 +196,12 @@ namespace LibraryManagement
 
             btnLuu.Enabled = true;
             btnHuy.Enabled = true;
-
+            btnCapThe.Enabled = false;
+            btnGiaHan.Enabled = false;
             txtMaDocGia.Focus();
-
+            dgvQLThe.Enabled = false;
+            frmChonDocGia frm = new frmChonDocGia(this);
+            frm.ShowDialog();
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -232,24 +250,38 @@ namespace LibraryManagement
 
         private void btnCapThe_Click(object sender, EventArgs e)
         {
-            bool f = false;
-            string err = "";
-            try
+            if (dgvQLThe.CurrentCell != null)
             {
-                f = dbQLTheTV.CapNhatPhieuMoThe(ref err, Int32.Parse(txtMaPhieuMo.Text));
-                if (f)
+                if (dgvQLThe.CurrentRow != null)
                 {
-                    LoadData();
-                    MessageBox.Show("Đã Cấp thẻ cho độc giả!");
+                    bool f = false;
+                    string err = "";
+                    try
+                    {
+                        f = dbQLTheTV.CapNhatPhieuMoThe(ref err, Int32.Parse(txtMaPhieuMo.Text));
+                        if (f)
+                        {
+                            LoadData();
+                            MessageBox.Show("Đã Cấp thẻ cho độc giả!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thất bại!!\n\r" + "Lỗi:" + err);
+                        }
+                    }
+                    catch (SqlException)
+                    {
+                        MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Thất bại!!\n\r" + "Lỗi:" + err);
+                    MessageBox.Show("Vui lòng chọn phiếu mở thẻ cần cấp!");
                 }
             }
-            catch (SqlException)
+            else
             {
-                MessageBox.Show("Không cập nhật được. Lỗi rồi!");
+                MessageBox.Show("Vui lòng chọn phiếu mở thẻ cần cấp!");
             }
         }
 
@@ -274,6 +306,25 @@ namespace LibraryManagement
             {
                 MessageBox.Show("Không cập nhật được. Lỗi rồi!");
             }
+        }
+        public void ChonMaDocGia(string maDocGia)
+        {
+            txtMaDocGia.Text = maDocGia;
+        }
+
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            txtMaPhieuMo.ResetText();
+            txtMaNV.ResetText();
+            txtMaDocGia.ResetText();
+            txtNgayLap.ResetText();
+            txtTrangThai.ResetText();
+
+            dtPhieuMoThe.Clear();
+            dtPhieuMoThe = dbQLTheTV.LayPhieuMoThe().Tables[0];
+            dgvQLThe.DataSource = dtPhieuMoThe;
+
+            //btnCapThe.Enabled = true;
         }
     }
 }

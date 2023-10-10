@@ -100,6 +100,7 @@ namespace LibraryManagement
             cboTenNXB.ResetText();
             cboTenKeSach.ResetText();
             cboTenTheLoai.ResetText();
+            LoadData();
         }
     }
 }

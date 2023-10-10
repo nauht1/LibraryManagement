@@ -38,6 +38,7 @@ namespace LibraryManagement
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             bool f;
+            bool c;
             username = txtUsername.Text;
             password = txtPassword.Text;
             string err = "";
@@ -63,7 +64,15 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    MessageBox.Show("Tên tài khoản hoặc mật khẩu sai rồi!");
+                    c = dbTaiKhoan.KiemTraTaiKhoanAdmin(ref err, username, password);
+                    if (c)
+                    {
+                        MessageBox.Show("frmQLTaiKhoan");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản hoặc mẩu khẩu sai rồi!!");
+                    }
                 }
             }
             catch (SqlException ex)

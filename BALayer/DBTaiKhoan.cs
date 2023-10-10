@@ -33,6 +33,13 @@ namespace BALayer
                 new SqlParameter("@password", password),
                 new SqlParameter("@status", 1));
         }
+        public bool KiemTraTaiKhoanAdmin(ref string err, string username, string password)
+        {
+            string query = "SELECT COUNT(*) FROM dbo.TaiKhoanDangNhap WHERE TenDangNhap = @username AND MatKhau = @password";
+            return db.MyExcuteScalar(query, CommandType.Text, ref err,
+               new SqlParameter("@username", username),
+               new SqlParameter("@password", password));
+        }
         public int LayMaNhanVien(ref string err, string username)
         {
             string query = "SELECT MaNhanVien FROM TaiKhoanDangNhap WHERE TenDangNhap = @username";

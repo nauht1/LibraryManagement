@@ -324,7 +324,6 @@ namespace LibraryManagement
             dtPhieuMoThe = dbQLTheTV.LayPhieuMoThe().Tables[0];
             dgvQLThe.DataSource = dtPhieuMoThe;
 
-            //btnCapThe.Enabled = true;
         }
     }
 }

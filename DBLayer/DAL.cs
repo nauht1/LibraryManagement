@@ -74,6 +74,18 @@ namespace DBLayer
         {
             return new SqlDataAdapter(comm, conn);
         }
+        public SqlDataAdapter ReturnDataAdapterWithArgs(string strSQL, CommandType ct, params SqlParameter[] param)
+        {
+            if (conn.State == ConnectionState.Open)
+                conn.Close();
+            conn.Open();
+            comm.Parameters.Clear();
+            comm.CommandText = strSQL;
+            comm.CommandType = ct;
+            foreach (SqlParameter p in param)
+                comm.Parameters.Add(p);
+            return new SqlDataAdapter(comm);
+        }
         public bool MyExcuteScalar(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
         {
             bool f = false;
@@ -127,10 +139,5 @@ namespace DBLayer
             }
             return obj;
         }
-
-        //public int ExecuteScalar(string query, CommandType text, SqlParameter[] parameters)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

@@ -130,16 +130,20 @@ namespace LibraryManagement
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            string err = "";
             try
             {
                 int r = dgvNhanVien.CurrentCell.RowIndex;
                 string strMaNV =
                 dgvNhanVien.Rows[r].Cells["MaNhanVien"].Value.ToString();
-
+                if (Int32.Parse(strMaNV) == frmLogin.maNhanVien)
+                {
+                    MessageBox.Show("Khong the xoa nhan vien nay!");
+                    return;
+                }
                 DialogResult traloi;
                 traloi = MessageBox.Show("Chắc xóa nhân viên này không?", "Trả lời",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                string err = "";
                 if (traloi == DialogResult.Yes)
                 {
                     bool f = dbNhanVien.XoaNhanVien(ref err, Int32.Parse(strMaNV));
@@ -154,9 +158,9 @@ namespace LibraryManagement
                     }
                 }
             }
-            catch (SqlException)
+            catch (Exception)
             {
-                MessageBox.Show("Không xóa được. Lỗi rồi!!!");
+                MessageBox.Show("Không xóa được. Lỗi rồi!!" + err);
             }
         }
 

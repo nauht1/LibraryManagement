@@ -48,8 +48,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(165, 323);
+            this.panel1.Size = new System.Drawing.Size(220, 398);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -57,9 +58,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Subheading Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.ForeColor = System.Drawing.Color.LightSalmon;
-            this.label2.Location = new System.Drawing.Point(34, 110);
+            this.label2.Location = new System.Drawing.Point(45, 135);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 38);
+            this.label2.Size = new System.Drawing.Size(112, 43);
             this.label2.TabIndex = 0;
             this.label2.Text = "KT LIB";
             // 
@@ -68,9 +70,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Subheading Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(12, 68);
+            this.label1.Location = new System.Drawing.Point(16, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 38);
+            this.label1.Size = new System.Drawing.Size(167, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng nhập";
             // 
@@ -78,9 +81,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Heading", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(185, 57);
+            this.label3.Location = new System.Drawing.Point(247, 70);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 28);
+            this.label3.Size = new System.Drawing.Size(148, 32);
             this.label3.TabIndex = 1;
             this.label3.Text = "Tên đăng nhập";
             // 
@@ -88,9 +92,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Heading", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(185, 130);
+            this.label4.Location = new System.Drawing.Point(247, 160);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 28);
+            this.label4.Size = new System.Drawing.Size(99, 32);
             this.label4.TabIndex = 1;
             this.label4.Text = "Mật khẩu";
             // 
@@ -98,21 +103,21 @@
             // 
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(190, 88);
-            this.txtUsername.Multiline = true;
+            this.txtUsername.Location = new System.Drawing.Point(253, 108);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(211, 28);
+            this.txtUsername.Size = new System.Drawing.Size(281, 30);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(190, 161);
-            this.txtPassword.Multiline = true;
+            this.txtPassword.Location = new System.Drawing.Point(253, 198);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(211, 28);
+            this.txtPassword.Size = new System.Drawing.Size(281, 30);
             this.txtPassword.TabIndex = 2;
             // 
             // btnDangNhap
@@ -120,9 +125,10 @@
             this.btnDangNhap.BackColor = System.Drawing.Color.Salmon;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Sitka Heading", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(310, 253);
+            this.btnDangNhap.Location = new System.Drawing.Point(413, 311);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(93, 36);
+            this.btnDangNhap.Size = new System.Drawing.Size(124, 44);
             this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -132,9 +138,10 @@
             // 
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Sitka Heading", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(211, 253);
+            this.btnThoat.Location = new System.Drawing.Point(281, 311);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(93, 36);
+            this.btnThoat.Size = new System.Drawing.Size(124, 44);
             this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -144,9 +151,10 @@
             // 
             this.cbShowPass.AutoSize = true;
             this.cbShowPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbShowPass.Location = new System.Drawing.Point(292, 195);
+            this.cbShowPass.Location = new System.Drawing.Point(389, 240);
+            this.cbShowPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbShowPass.Name = "cbShowPass";
-            this.cbShowPass.Size = new System.Drawing.Size(111, 20);
+            this.cbShowPass.Size = new System.Drawing.Size(125, 22);
             this.cbShowPass.TabIndex = 4;
             this.cbShowPass.Text = "Hiện mật khẩu";
             this.cbShowPass.UseVisualStyleBackColor = true;
@@ -155,17 +163,18 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.Location = new System.Drawing.Point(157, -2);
+            this.panel2.Location = new System.Drawing.Point(209, -2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(272, 10);
+            this.panel2.Size = new System.Drawing.Size(363, 12);
             this.panel2.TabIndex = 5;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(429, 319);
+            this.ClientSize = new System.Drawing.Size(572, 393);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.cbShowPass);
@@ -177,6 +186,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";

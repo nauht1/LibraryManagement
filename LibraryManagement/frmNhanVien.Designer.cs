@@ -40,6 +40,7 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
             this.btnShow = new System.Windows.Forms.Button();
             this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.txtNgaySinh = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
@@ -90,9 +90,8 @@
             this.txtMaNV.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNV.Location = new System.Drawing.Point(157, 22);
             this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaNV.Multiline = true;
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(285, 34);
+            this.txtMaNV.Size = new System.Drawing.Size(285, 32);
             this.txtMaNV.TabIndex = 3;
             // 
             // txtHoTen
@@ -101,9 +100,8 @@
             this.txtHoTen.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Location = new System.Drawing.Point(157, 74);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(285, 34);
+            this.txtHoTen.Size = new System.Drawing.Size(285, 32);
             this.txtHoTen.TabIndex = 3;
             // 
             // label3
@@ -134,9 +132,8 @@
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(157, 224);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(285, 34);
+            this.txtEmail.Size = new System.Drawing.Size(285, 32);
             this.txtEmail.TabIndex = 9;
             // 
             // label5
@@ -156,9 +153,8 @@
             this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(157, 278);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(285, 34);
+            this.txtSDT.Size = new System.Drawing.Size(285, 32);
             this.txtSDT.TabIndex = 11;
             // 
             // label6
@@ -199,6 +195,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(470, 504);
             this.panel1.TabIndex = 12;
+            // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNgaySinh.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgaySinh.Location = new System.Drawing.Point(156, 171);
+            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.Size = new System.Drawing.Size(285, 32);
+            this.txtNgaySinh.TabIndex = 15;
             // 
             // btnShow
             // 
@@ -395,17 +401,6 @@
             this.dgvNhanVien.Size = new System.Drawing.Size(883, 516);
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
-            // 
-            // txtNgaySinh
-            // 
-            this.txtNgaySinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNgaySinh.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgaySinh.Location = new System.Drawing.Point(156, 171);
-            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNgaySinh.Multiline = true;
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(285, 34);
-            this.txtNgaySinh.TabIndex = 15;
             // 
             // frmNhanVien
             // 

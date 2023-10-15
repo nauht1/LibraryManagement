@@ -59,17 +59,19 @@
             this.panel1.Controls.Add(this.btnThongTin);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-3, 5);
+            this.panel1.Location = new System.Drawing.Point(-4, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 574);
+            this.panel1.Size = new System.Drawing.Size(328, 706);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(26, 455);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 560);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 43);
+            this.pictureBox2.Size = new System.Drawing.Size(49, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -79,9 +81,10 @@
             this.btnDangXuat.BackColor = System.Drawing.Color.LightSalmon;
             this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangXuat.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangXuat.Location = new System.Drawing.Point(69, 502);
+            this.btnDangXuat.Location = new System.Drawing.Point(92, 618);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(177, 43);
+            this.btnDangXuat.Size = new System.Drawing.Size(236, 53);
             this.btnDangXuat.TabIndex = 10;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
@@ -92,9 +95,10 @@
             this.btnThongTin.BackColor = System.Drawing.Color.LightSalmon;
             this.btnThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThongTin.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTin.Location = new System.Drawing.Point(69, 455);
+            this.btnThongTin.Location = new System.Drawing.Point(92, 560);
+            this.btnThongTin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThongTin.Name = "btnThongTin";
-            this.btnThongTin.Size = new System.Drawing.Size(177, 43);
+            this.btnThongTin.Size = new System.Drawing.Size(236, 53);
             this.btnThongTin.TabIndex = 10;
             this.btnThongTin.Text = "  Thông tin cá nhân";
             this.btnThongTin.UseVisualStyleBackColor = false;
@@ -103,9 +107,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 504);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 620);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 38);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -115,9 +120,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Subheading Semibold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.Color.LightSalmon;
-            this.label1.Location = new System.Drawing.Point(30, 86);
+            this.label1.Location = new System.Drawing.Point(40, 106);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 73);
+            this.label1.Size = new System.Drawing.Size(223, 87);
             this.label1.TabIndex = 1;
             this.label1.Text = "KT LIB";
             // 
@@ -126,9 +132,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Subheading Semibold", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label2.Location = new System.Drawing.Point(349, 28);
+            this.label2.Location = new System.Drawing.Point(465, 34);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(418, 58);
+            this.label2.Size = new System.Drawing.Size(489, 68);
             this.label2.TabIndex = 2;
             this.label2.Text = "WELCOME TO KT LIB";
             // 
@@ -138,9 +145,10 @@
             this.tilePhieuNhap.CustomBackground = true;
             this.tilePhieuNhap.CustomForeColor = true;
             this.tilePhieuNhap.ForeColor = System.Drawing.Color.White;
-            this.tilePhieuNhap.Location = new System.Drawing.Point(412, 262);
+            this.tilePhieuNhap.Location = new System.Drawing.Point(549, 322);
+            this.tilePhieuNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tilePhieuNhap.Name = "tilePhieuNhap";
-            this.tilePhieuNhap.Size = new System.Drawing.Size(140, 140);
+            this.tilePhieuNhap.Size = new System.Drawing.Size(187, 172);
             this.tilePhieuNhap.TabIndex = 79;
             this.tilePhieuNhap.Text = "Quản lý phiếu nhập";
             this.tilePhieuNhap.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -154,9 +162,10 @@
             this.tileTaiKhoan.CustomBackground = true;
             this.tileTaiKhoan.CustomForeColor = true;
             this.tileTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.tileTaiKhoan.Location = new System.Drawing.Point(412, 408);
+            this.tileTaiKhoan.Location = new System.Drawing.Point(549, 502);
+            this.tileTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileTaiKhoan.Name = "tileTaiKhoan";
-            this.tileTaiKhoan.Size = new System.Drawing.Size(140, 138);
+            this.tileTaiKhoan.Size = new System.Drawing.Size(187, 170);
             this.tileTaiKhoan.TabIndex = 78;
             this.tileTaiKhoan.Text = "Quản lý tài khoản";
             this.tileTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -171,15 +180,17 @@
             this.tileTacGia.CustomBackground = true;
             this.tileTacGia.CustomForeColor = true;
             this.tileTacGia.ForeColor = System.Drawing.Color.White;
-            this.tileTacGia.Location = new System.Drawing.Point(704, 116);
+            this.tileTacGia.Location = new System.Drawing.Point(939, 143);
+            this.tileTacGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileTacGia.Name = "tileTacGia";
-            this.tileTacGia.Size = new System.Drawing.Size(140, 140);
+            this.tileTacGia.Size = new System.Drawing.Size(187, 172);
             this.tileTacGia.TabIndex = 75;
             this.tileTacGia.Text = "Quản lý tác giả";
             this.tileTacGia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tileTacGia.TileImage = ((System.Drawing.Image)(resources.GetObject("tileTacGia.TileImage")));
             this.tileTacGia.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileTacGia.UseTileImage = true;
+            this.tileTacGia.Click += new System.EventHandler(this.tileTacGia_Click);
             // 
             // tileKeSach
             // 
@@ -187,9 +198,10 @@
             this.tileKeSach.CustomBackground = true;
             this.tileKeSach.CustomForeColor = true;
             this.tileKeSach.ForeColor = System.Drawing.Color.White;
-            this.tileKeSach.Location = new System.Drawing.Point(266, 262);
+            this.tileKeSach.Location = new System.Drawing.Point(355, 322);
+            this.tileKeSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileKeSach.Name = "tileKeSach";
-            this.tileKeSach.Size = new System.Drawing.Size(140, 140);
+            this.tileKeSach.Size = new System.Drawing.Size(187, 172);
             this.tileKeSach.TabIndex = 76;
             this.tileKeSach.Text = "Quản lý kệ sách";
             this.tileKeSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -203,9 +215,10 @@
             this.tileTheThuVien.CustomBackground = true;
             this.tileTheThuVien.CustomForeColor = true;
             this.tileTheThuVien.ForeColor = System.Drawing.Color.White;
-            this.tileTheThuVien.Location = new System.Drawing.Point(704, 262);
+            this.tileTheThuVien.Location = new System.Drawing.Point(939, 322);
+            this.tileTheThuVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileTheThuVien.Name = "tileTheThuVien";
-            this.tileTheThuVien.Size = new System.Drawing.Size(140, 140);
+            this.tileTheThuVien.Size = new System.Drawing.Size(187, 172);
             this.tileTheThuVien.TabIndex = 74;
             this.tileTheThuVien.Text = "Quản lý thẻ thư viện";
             this.tileTheThuVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -220,9 +233,10 @@
             this.tilePhieuViPham.CustomBackground = true;
             this.tilePhieuViPham.CustomForeColor = true;
             this.tilePhieuViPham.ForeColor = System.Drawing.Color.White;
-            this.tilePhieuViPham.Location = new System.Drawing.Point(558, 262);
+            this.tilePhieuViPham.Location = new System.Drawing.Point(744, 322);
+            this.tilePhieuViPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tilePhieuViPham.Name = "tilePhieuViPham";
-            this.tilePhieuViPham.Size = new System.Drawing.Size(140, 140);
+            this.tilePhieuViPham.Size = new System.Drawing.Size(187, 172);
             this.tilePhieuViPham.TabIndex = 73;
             this.tilePhieuViPham.Text = "Phiếu vi phạm";
             this.tilePhieuViPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -236,9 +250,10 @@
             this.tileNhanVien.CustomBackground = true;
             this.tileNhanVien.CustomForeColor = true;
             this.tileNhanVien.ForeColor = System.Drawing.Color.White;
-            this.tileNhanVien.Location = new System.Drawing.Point(266, 408);
+            this.tileNhanVien.Location = new System.Drawing.Point(355, 502);
+            this.tileNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileNhanVien.Name = "tileNhanVien";
-            this.tileNhanVien.Size = new System.Drawing.Size(140, 138);
+            this.tileNhanVien.Size = new System.Drawing.Size(187, 170);
             this.tileNhanVien.TabIndex = 72;
             this.tileNhanVien.Text = "Quản lý nhân viên";
             this.tileNhanVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -253,9 +268,10 @@
             this.tileDocGia.CustomBackground = true;
             this.tileDocGia.CustomForeColor = true;
             this.tileDocGia.ForeColor = System.Drawing.Color.White;
-            this.tileDocGia.Location = new System.Drawing.Point(558, 116);
+            this.tileDocGia.Location = new System.Drawing.Point(744, 143);
+            this.tileDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileDocGia.Name = "tileDocGia";
-            this.tileDocGia.Size = new System.Drawing.Size(140, 140);
+            this.tileDocGia.Size = new System.Drawing.Size(187, 172);
             this.tileDocGia.TabIndex = 71;
             this.tileDocGia.Text = "Quản lý độc giả";
             this.tileDocGia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -270,9 +286,10 @@
             this.tileDauSach.CustomBackground = true;
             this.tileDauSach.CustomForeColor = true;
             this.tileDauSach.ForeColor = System.Drawing.Color.White;
-            this.tileDauSach.Location = new System.Drawing.Point(412, 116);
+            this.tileDauSach.Location = new System.Drawing.Point(549, 143);
+            this.tileDauSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileDauSach.Name = "tileDauSach";
-            this.tileDauSach.Size = new System.Drawing.Size(140, 140);
+            this.tileDauSach.Size = new System.Drawing.Size(187, 172);
             this.tileDauSach.TabIndex = 70;
             this.tileDauSach.Text = "Quản lý đầu sách";
             this.tileDauSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -288,9 +305,10 @@
             this.tileMuonTraSach.CustomBackground = true;
             this.tileMuonTraSach.CustomForeColor = true;
             this.tileMuonTraSach.ForeColor = System.Drawing.Color.White;
-            this.tileMuonTraSach.Location = new System.Drawing.Point(266, 116);
+            this.tileMuonTraSach.Location = new System.Drawing.Point(355, 143);
+            this.tileMuonTraSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileMuonTraSach.Name = "tileMuonTraSach";
-            this.tileMuonTraSach.Size = new System.Drawing.Size(140, 140);
+            this.tileMuonTraSach.Size = new System.Drawing.Size(187, 172);
             this.tileMuonTraSach.TabIndex = 69;
             this.tileMuonTraSach.Text = "Quản lý mượn / trả";
             this.tileMuonTraSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -300,9 +318,9 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 568);
+            this.ClientSize = new System.Drawing.Size(1155, 699);
             this.Controls.Add(this.tilePhieuNhap);
             this.Controls.Add(this.tileTaiKhoan);
             this.Controls.Add(this.tileTacGia);
@@ -315,9 +333,11 @@
             this.Controls.Add(this.tileMuonTraSach);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.Text = "frmMain";
             this.Load += new System.EventHandler(this.frmMain_Load);

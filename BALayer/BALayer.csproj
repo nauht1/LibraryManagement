@@ -48,7 +48,9 @@
     <Compile Include="DBDocGia.cs" />
     <Compile Include="DBQLTheTV.cs" />
     <Compile Include="DBSach.cs" />
+    <Compile Include="DBTacGia.cs" />
     <Compile Include="DBTaiKhoan.cs" />
+    <Compile Include="DBTheLoai.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

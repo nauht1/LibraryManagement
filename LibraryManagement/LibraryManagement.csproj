@@ -104,6 +104,18 @@
     <Compile Include="frmStarter.Designer.cs">
       <DependentUpon>frmStarter.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTacGia.Designer.cs">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTheLoai.Designer.cs">
+      <DependentUpon>frmTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThongTinCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStarter.resx">
       <DependentUpon>frmStarter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTacGia.resx">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTheLoai.resx">
+      <DependentUpon>frmTheLoai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongTinCaNhan.resx">
       <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>

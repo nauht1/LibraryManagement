@@ -61,7 +61,6 @@ namespace LibraryManagement
         private void tileTacGia_Click(object sender, EventArgs e)
         {
             frmTacGia frm = new frmTacGia();
-            this.Hide();
             frm.ShowDialog();
         }
 

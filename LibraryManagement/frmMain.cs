@@ -57,5 +57,10 @@ namespace LibraryManagement
             this.Hide();
             frm.ShowDialog();
         }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

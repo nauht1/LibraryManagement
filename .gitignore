@@ -6,4 +6,5 @@ DBLayer/bin/
 DBLayer/obj/
 LibraryManagement/.vs/
 LibraryManagement/obj/
-
+LibraryManagement/bin/Debug/LibraryManagement.exe
+LibraryManagement/bin/Debug/LibraryManagement.pdb

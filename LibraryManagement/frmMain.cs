@@ -68,5 +68,17 @@ namespace LibraryManagement
         {
             Application.Exit();
         }
+
+        private void tileTheLoai_Click(object sender, EventArgs e)
+        {
+            frmTheLoai frm = new frmTheLoai();
+            frm.ShowDialog();
+        }
+
+        private void tileMuonTraSach_Click(object sender, EventArgs e)
+        {
+            frmQLMuonTra frm = new frmQLMuonTra();
+            frm.ShowDialog();
+        }
     }
 }

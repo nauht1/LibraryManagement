@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="DBDocGia.cs" />
+    <Compile Include="DBPhieuMuonTra.cs" />
     <Compile Include="DBQLTheTV.cs" />
     <Compile Include="DBSach.cs" />
     <Compile Include="DBTacGia.cs" />

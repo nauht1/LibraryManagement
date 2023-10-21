@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCTPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTPhieuMuon.Designer.cs">
+      <DependentUpon>frmCTPhieuMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,18 @@
     </Compile>
     <Compile Include="frmChonDocGia.Designer.cs">
       <DependentUpon>frmChonDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuMuon.Designer.cs">
+      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLMuonTra.Designer.cs">
+      <DependentUpon>frmQLMuonTra.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQLTheThuVien.cs">
       <SubType>Form</SubType>
@@ -124,6 +142,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCTPhieuMuon.resx">
+      <DependentUpon>frmCTPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDocGia.resx">
       <DependentUpon>frmDocGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +159,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmChonDocGia.resx">
       <DependentUpon>frmChonDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuMuon.resx">
+      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLMuonTra.resx">
+      <DependentUpon>frmQLMuonTra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLTheThuVien.resx">
       <DependentUpon>frmQLTheThuVien.cs</DependentUpon>

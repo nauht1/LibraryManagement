@@ -17,7 +17,7 @@ namespace LibraryManagement
         private int maNV = frmLogin.maNhanVien;
         DataTable dtDocGia = null;
         DataTable dtSachMuon = null;
-        bool Them;
+        //bool Them;
         DBDocGia dbDocGia;
 
         DataTable dtSach = null;

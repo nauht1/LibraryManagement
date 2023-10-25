@@ -81,5 +81,11 @@ namespace LibraryManagement
             frmQLMuonTra frm = new frmQLMuonTra();
             frm.ShowDialog();
         }
+
+        private void tilePhieuViPham_Click(object sender, EventArgs e)
+        {
+            frmPhieuViPham frm = new frmPhieuViPham();
+            frm.Show();
+        }
     }
 }

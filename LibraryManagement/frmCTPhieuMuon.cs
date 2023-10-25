@@ -15,7 +15,7 @@ namespace LibraryManagement
     {
         DBPhieuMuonTra dbPhieuMuonTra = null;
         DataTable dtCTPhieuMuon = null;
-        bool Them;
+        //bool Them;
         public frmCTPhieuMuon()
         {
             dbPhieuMuonTra = new DBPhieuMuonTra();

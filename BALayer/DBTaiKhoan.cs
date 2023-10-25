@@ -79,5 +79,10 @@ namespace BALayer
                 new SqlParameter("@matKhauCu", matKhauCu),
                 new SqlParameter("@matKhauMoi", matKhauMoi));
         }
+        public bool ResetPassword(ref string err, int maTaiKhoan)
+        {
+            return db.MyExecuteNonQuery("spResetPassword", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@maTaiKhoan", maTaiKhoan));
+        }
     }
 }

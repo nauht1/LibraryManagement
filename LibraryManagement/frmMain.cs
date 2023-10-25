@@ -24,7 +24,8 @@ namespace LibraryManagement
 
         private void tileTaiKhoan_Click(object sender, EventArgs e)
         {
-
+            frmTaiKhoan frm = new frmTaiKhoan();
+            frm.ShowDialog();
         }
 
         private void tilePhieuMoThe_Click(object sender, EventArgs e)

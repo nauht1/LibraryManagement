@@ -33,6 +33,7 @@ namespace LibraryManagement
             dtCTPhieuMuon = dbPhieuMuonTra.LayChiTietPhieuMuon().Tables[0];
             dgvCTPhieuMuon.DataSource = dtCTPhieuMuon;
 
+            dgvCTPhieuMuon.Columns["MaDocGia"].Visible = false;
             dgvCTPhieuMuon.AutoResizeColumns();
             dgvCTPhieuMuon_CellClick(null, null);
         }
@@ -51,12 +52,14 @@ namespace LibraryManagement
             cboTinhTrangTra.Enabled = false;
             btnGiaHan.Enabled = false;
             btnTraSach.Enabled = false;
+            DateTime ngayHienTai = DateTime.Today.Date;
+            DateTime ngayHenTra = DateTime.Parse(txtHenTra.Text);
             if (txtNgayTraThuc.Text == "")
             {
                 cboTinhTrangTra.Enabled = true;
                 btnTraSach.Enabled = true;
             }
-            if (txtGiaHan.Text == "" && txtNgayTraThuc.Text == "")
+            if (txtGiaHan.Text == "" && txtNgayTraThuc.Text == "" && ngayHienTai <= ngayHenTra)
             {
                 btnGiaHan.Enabled = true;
             }

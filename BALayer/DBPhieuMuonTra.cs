@@ -51,6 +51,6 @@ namespace BALayer
             return db.MyExecuteNonQuery("spGiaHanPhieuMuon", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@maPhieuMuon", maPhieuMuon),
                 new SqlParameter("@giaHan", giaHan));
-        }
+        }        
     }
 }

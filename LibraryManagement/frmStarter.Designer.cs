@@ -69,7 +69,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 6);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(328, 706);
             this.panel1.TabIndex = 80;
@@ -80,7 +80,7 @@
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.Location = new System.Drawing.Point(92, 618);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(236, 53);
             this.btnDangNhap.TabIndex = 10;
@@ -92,7 +92,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(35, 620);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +117,7 @@
             this.dgvSach.AllowUserToDeleteRows = false;
             this.dgvSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSach.Location = new System.Drawing.Point(369, 218);
-            this.dgvSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSach.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSach.Name = "dgvSach";
             this.dgvSach.ReadOnly = true;
             this.dgvSach.RowHeadersWidth = 43;
@@ -129,7 +129,7 @@
             this.txtTenDauSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTenDauSach.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDauSach.Location = new System.Drawing.Point(369, 156);
-            this.txtTenDauSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenDauSach.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDauSach.Name = "txtTenDauSach";
             this.txtTenDauSach.Size = new System.Drawing.Size(273, 33);
             this.txtTenDauSach.TabIndex = 83;
@@ -140,7 +140,7 @@
             this.btnTimKiem.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnTimKiem.Location = new System.Drawing.Point(1263, 149);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(127, 46);
             this.btnTimKiem.TabIndex = 84;
@@ -198,7 +198,7 @@
             this.cboTenNXB.FormattingEnabled = true;
             this.cboTenNXB.ItemHeight = 25;
             this.cboTenNXB.Location = new System.Drawing.Point(672, 156);
-            this.cboTenNXB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTenNXB.Margin = new System.Windows.Forms.Padding(4);
             this.cboTenNXB.Name = "cboTenNXB";
             this.cboTenNXB.Size = new System.Drawing.Size(187, 33);
             this.cboTenNXB.TabIndex = 86;
@@ -210,7 +210,7 @@
             this.cboTenKeSach.FormattingEnabled = true;
             this.cboTenKeSach.ItemHeight = 25;
             this.cboTenKeSach.Location = new System.Drawing.Point(880, 156);
-            this.cboTenKeSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTenKeSach.Margin = new System.Windows.Forms.Padding(4);
             this.cboTenKeSach.Name = "cboTenKeSach";
             this.cboTenKeSach.Size = new System.Drawing.Size(115, 33);
             this.cboTenKeSach.TabIndex = 86;
@@ -222,7 +222,7 @@
             this.cboTenTheLoai.FormattingEnabled = true;
             this.cboTenTheLoai.ItemHeight = 25;
             this.cboTenTheLoai.Location = new System.Drawing.Point(1017, 156);
-            this.cboTenTheLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTenTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.cboTenTheLoai.Name = "cboTenTheLoai";
             this.cboTenTheLoai.Size = new System.Drawing.Size(191, 33);
             this.cboTenTheLoai.TabIndex = 86;
@@ -233,7 +233,7 @@
             this.btnClear.BackColor = System.Drawing.Color.IndianRed;
             this.btnClear.Font = new System.Drawing.Font("Sitka Heading", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(1392, 149);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(92, 46);
             this.btnClear.TabIndex = 87;
@@ -259,7 +259,7 @@
             this.Controls.Add(this.dgvSach);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmStarter";

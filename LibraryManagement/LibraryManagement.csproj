@@ -62,6 +62,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCT_PhieuViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCT_PhieuViPham.Designer.cs">
+      <DependentUpon>frmCT_PhieuViPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuViPham.Designer.cs">
+      <DependentUpon>frmPhieuViPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCTPhieuMuon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +140,12 @@
     <Compile Include="frmTacGia.Designer.cs">
       <DependentUpon>frmTacGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTaoPhieuViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaoPhieuViPham.Designer.cs">
+      <DependentUpon>frmTaoPhieuViPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTheLoai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +162,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCTPhieuMuon.resx">
       <DependentUpon>frmCTPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCT_PhieuViPham.resx">
+      <DependentUpon>frmCT_PhieuViPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDocGia.resx">
       <DependentUpon>frmDocGia.cs</DependentUpon>
@@ -163,6 +184,9 @@
     <EmbeddedResource Include="frmPhieuMuon.resx">
       <DependentUpon>frmPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuViPham.resx">
+      <DependentUpon>frmPhieuViPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQLMuonTra.resx">
       <DependentUpon>frmQLMuonTra.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTacGia.resx">
       <DependentUpon>frmTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaoPhieuViPham.resx">
+      <DependentUpon>frmTaoPhieuViPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTheLoai.resx">
       <DependentUpon>frmTheLoai.cs</DependentUpon>

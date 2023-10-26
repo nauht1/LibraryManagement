@@ -87,5 +87,11 @@ namespace LibraryManagement
             frmPhieuViPham frm = new frmPhieuViPham();
             frm.Show();
         }
+
+        private void tileKeSach_Click(object sender, EventArgs e)
+        {
+            frmKeSach frm = new frmKeSach();
+            frm.Show();
+        }
     }
 }

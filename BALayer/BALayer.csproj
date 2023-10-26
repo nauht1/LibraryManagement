@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBKeSach.cs" />
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="DBDocGia.cs" />
     <Compile Include="DBPhieuMuonTra.cs" />

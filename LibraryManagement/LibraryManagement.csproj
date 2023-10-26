@@ -68,6 +68,12 @@
     <Compile Include="frmCT_PhieuViPham.Designer.cs">
       <DependentUpon>frmCT_PhieuViPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKeSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeSach.Designer.cs">
+      <DependentUpon>frmKeSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhieuViPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDocGia.resx">
       <DependentUpon>frmDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeSach.resx">
+      <DependentUpon>frmKeSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

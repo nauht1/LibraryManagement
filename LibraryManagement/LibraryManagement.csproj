@@ -74,6 +74,12 @@
     <Compile Include="frmKeSach.Designer.cs">
       <DependentUpon>frmKeSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapSach.Designer.cs">
+      <DependentUpon>frmNhapSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhieuViPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,12 @@
     <Compile Include="frmThongTinCaNhan.Designer.cs">
       <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXemPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemPhieuNhap.Designer.cs">
+      <DependentUpon>frmXemPhieuNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCTPhieuMuon.resx">
@@ -195,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmChonDocGia.resx">
       <DependentUpon>frmChonDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapSach.resx">
+      <DependentUpon>frmNhapSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuMuon.resx">
       <DependentUpon>frmPhieuMuon.cs</DependentUpon>
@@ -225,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongTinCaNhan.resx">
       <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemPhieuNhap.resx">
+      <DependentUpon>frmXemPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -93,5 +93,16 @@ namespace LibraryManagement
             frmKeSach frm = new frmKeSach();
             frm.Show();
         }
+
+        private void tileDauSach_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tilePhieuNhap_Click(object sender, EventArgs e)
+        {
+            frmNhapSach frm = new frmNhapSach();
+            frm.Show();
+        }
     }
 }

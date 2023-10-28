@@ -47,7 +47,9 @@
     <Compile Include="DBKeSach.cs" />
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="DBDocGia.cs" />
+    <Compile Include="DBNxb.cs" />
     <Compile Include="DBPhieuMuonTra.cs" />
+    <Compile Include="DBPhieuNhap.cs" />
     <Compile Include="DBPhieuViPham.cs" />
     <Compile Include="DBQLTheTV.cs" />
     <Compile Include="DBSach.cs" />

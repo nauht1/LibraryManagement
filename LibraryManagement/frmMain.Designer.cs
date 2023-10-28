@@ -148,6 +148,7 @@
             this.tilePhieuNhap.TileImage = ((System.Drawing.Image)(resources.GetObject("tilePhieuNhap.TileImage")));
             this.tilePhieuNhap.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tilePhieuNhap.UseTileImage = true;
+            this.tilePhieuNhap.Click += new System.EventHandler(this.tilePhieuNhap_Click);
             // 
             // tileTaiKhoan
             // 
@@ -283,6 +284,7 @@
             this.tileDauSach.TileImage = ((System.Drawing.Image)(resources.GetObject("tileDauSach.TileImage")));
             this.tileDauSach.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileDauSach.UseTileImage = true;
+            this.tileDauSach.Click += new System.EventHandler(this.tileDauSach_Click);
             // 
             // tileMuonTraSach
             // 

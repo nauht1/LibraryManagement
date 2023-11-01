@@ -98,6 +98,7 @@ namespace LibraryManagement
         private void btnClear_Click(object sender, EventArgs e)
         {
             dataList.Clear();
+            txtTongTien.ResetText();
             txtTongTien.Text = "0";
         }
 

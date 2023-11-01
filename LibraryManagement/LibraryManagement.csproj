@@ -51,6 +51,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +68,12 @@
     </Compile>
     <Compile Include="frmCT_PhieuViPham.Designer.cs">
       <DependentUpon>frmCT_PhieuViPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDauSach.Designer.cs">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKeSach.cs">
       <SubType>Form</SubType>
@@ -140,6 +147,12 @@
     <Compile Include="frmQLTheThuVien.Designer.cs">
       <DependentUpon>frmQLTheThuVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLySach.Designer.cs">
+      <DependentUpon>frmQuanLySach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStarter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +189,12 @@
     <Compile Include="frmThongTinCaNhan.Designer.cs">
       <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewDauSach.Designer.cs">
+      <DependentUpon>frmViewDauSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmXemPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCT_PhieuViPham.resx">
       <DependentUpon>frmCT_PhieuViPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDauSach.resx">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDocGia.resx">
       <DependentUpon>frmDocGia.cs</DependentUpon>
@@ -223,6 +245,9 @@
     <EmbeddedResource Include="frmQLTheThuVien.resx">
       <DependentUpon>frmQLTheThuVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLySach.resx">
+      <DependentUpon>frmQuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStarter.resx">
       <DependentUpon>frmStarter.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongTinCaNhan.resx">
       <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewDauSach.resx">
+      <DependentUpon>frmViewDauSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXemPhieuNhap.resx">
       <DependentUpon>frmXemPhieuNhap.cs</DependentUpon>

@@ -96,12 +96,19 @@ namespace LibraryManagement
 
         private void tileDauSach_Click(object sender, EventArgs e)
         {
-
+            frmDauSach frm = new frmDauSach();
+            frm.Show();
         }
 
         private void tilePhieuNhap_Click(object sender, EventArgs e)
         {
             frmNhapSach frm = new frmNhapSach();
+            frm.Show();
+        }
+
+        private void tileQLSach_Click(object sender, EventArgs e)
+        {
+            frmQuanLySach frm = new frmQuanLySach();   
             frm.Show();
         }
     }

@@ -40,5 +40,13 @@ namespace BALayer
             return db.MyExecuteNonQuery("spXoaTheLoai", CommandType.StoredProcedure,
                 ref err, new SqlParameter("@maTheLoai", maTheLoai));
         }
+
+        public bool ThemCT_TheLoai(ref string err, string maDauSach, int maTheLoai)
+        {
+            return db.MyExecuteNonQuery("spThemCT_TheLoai", CommandType.StoredProcedure, ref err,
+            new SqlParameter("@maDauSach", maDauSach),
+            new SqlParameter("@maTheLoai", maTheLoai));
+        }
+
     }
 }

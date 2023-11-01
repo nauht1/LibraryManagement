@@ -50,5 +50,20 @@ namespace BALayer
                 new SqlParameter("@tenKeSach", tenKeSach),
                 new SqlParameter("@tenTheLoai", tenTheLoai));
         }
+        public DataAdapter SachTrenKe(string tenKeSach)
+        {
+            return db.ReturnDataAdapterWithArgs("spTimKiemTatCaSachTrenKe", CommandType.StoredProcedure,
+                new SqlParameter("@tenKeSach", tenKeSach));
+        }
+        public DataSet LayToanBoSach()
+        {
+            return db.ExecuteQueryDataSet($"Select * from Sach ", CommandType.Text, null);
+        }
+        public bool ChuyenViTriSach(ref string err, string maSach, string tenKeSach_2)
+        {
+            return db.MyExecuteNonQuery("spChuyenSach", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@maSach", maSach),
+                new SqlParameter("@tenKeSach_2", tenKeSach_2));
+        }
     }
 }

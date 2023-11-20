@@ -41,11 +41,12 @@
             this.dgvDauSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDauSach,
             this.TenDauSach});
-            this.dgvDauSach.Location = new System.Drawing.Point(12, 12);
+            this.dgvDauSach.Location = new System.Drawing.Point(9, 10);
+            this.dgvDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDauSach.Name = "dgvDauSach";
             this.dgvDauSach.RowHeadersWidth = 51;
             this.dgvDauSach.RowTemplate.Height = 24;
-            this.dgvDauSach.Size = new System.Drawing.Size(956, 361);
+            this.dgvDauSach.Size = new System.Drawing.Size(717, 293);
             this.dgvDauSach.TabIndex = 0;
             // 
             // MaDauSach
@@ -68,10 +69,9 @@
             // 
             this.btnDong.BackColor = System.Drawing.Color.LightGreen;
             this.btnDong.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDong.Location = new System.Drawing.Point(851, 391);
-            this.btnDong.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDong.Location = new System.Drawing.Point(638, 318);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(108, 47);
+            this.btnDong.Size = new System.Drawing.Size(81, 38);
             this.btnDong.TabIndex = 35;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = false;
@@ -79,12 +79,16 @@
             // 
             // frmViewDauSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 451);
+            this.ClientSize = new System.Drawing.Size(729, 366);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.dgvDauSach);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmViewDauSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmViewDauSach";
             this.Load += new System.EventHandler(this.frmViewDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauSach)).EndInit();

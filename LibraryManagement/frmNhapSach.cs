@@ -35,6 +35,7 @@ namespace LibraryManagement
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            bool success = false;
             string maDauSach = txtMaDauSach.Text;
             string tenDauSach = txtTenDauSach.Text;
             string maSach = txtMaSach.Text;
@@ -59,11 +60,20 @@ namespace LibraryManagement
                         }
                         foreach (string ms in maSachArr)
                         {
-                            DataItem newItem = new DataItem(maDauSach, tenDauSach, ms, maTacGia, maNxb, donGia);
-                            dataList.Add(newItem);
+                            if (!IsMaSachExists(ms, 0))
+                            {
+                                DataItem newItem = new DataItem(maDauSach, tenDauSach, ms, maTacGia, maNxb, donGia);
+                                dataList.Add(newItem);
 
-                            tongTien += donGia;
-                            txtTongTien.Text = tongTien.ToString();
+                                tongTien += donGia;
+                                txtTongTien.Text = tongTien.ToString();
+                            }
+                            else
+                            {
+                                MessageBox.Show($"Mã sách {maSach} đã tồn tại !!");
+                                break;
+                            }
+                            success = true;
                         }
                     }
 
@@ -82,22 +92,34 @@ namespace LibraryManagement
                                 }
                                 else
                                     newMaSach = $"{maDauSach}-0{u}";
-                                DataItem newItem = new DataItem(maDauSach, tenDauSach, newMaSach, maTacGia, maNxb, donGia);
-                                dataList.Add(newItem);
+                                if (!IsMaSachExists(newMaSach, 0))
+                                {
+                                    DataItem newItem = new DataItem(maDauSach, tenDauSach, newMaSach, maTacGia, maNxb, donGia);
+                                    dataList.Add(newItem);
 
-                                tongTien += donGia;
-                                txtTongTien.Text = tongTien.ToString();
+                                    tongTien += donGia;
+                                    txtTongTien.Text = tongTien.ToString();
+                                }
+                                else
+                                {
+                                    MessageBox.Show($"Mã sách {newMaSach} đã tồn tại!!");
+                                    break;
+                                }
+                                success = true;
                             }
                         }
                     }    
-                    txtSoDau.Text = string.Empty;
-                    txtSoCuoi.Text = string.Empty;
-                    txtMaDauSach.Text = string.Empty;
-                    txtTenDauSach.Text = string.Empty;
-                    txtMaSach.Text = string.Empty;
-                    cboTacGia.SelectedIndex = -1;
-                    cboNXB.SelectedIndex = -1;
-                    txtDonGia.Text = string.Empty;
+                    if (success)
+                    {
+                        txtSoDau.Text = string.Empty;
+                        txtSoCuoi.Text = string.Empty;
+                        txtMaDauSach.Text = string.Empty;
+                        txtTenDauSach.Text = string.Empty;
+                        txtMaSach.Text = string.Empty;
+                        cboTacGia.SelectedIndex = -1;
+                        cboNXB.SelectedIndex = -1;
+                        txtDonGia.Text = string.Empty;
+                    }
                 }
                 catch
                 {
@@ -106,7 +128,17 @@ namespace LibraryManagement
             }
 
         }
-
+        private bool IsMaSachExists(string maSach, int rowIndex)
+        {
+            foreach (DataItem item in dataList)
+            {
+                if (item.maSach == maSach)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         private void frmNhapSach_Load(object sender, EventArgs e)
         {
             dgvCT_PhieuNhap.AutoResizeColumns();
@@ -132,6 +164,7 @@ namespace LibraryManagement
             dataList.Clear();
             txtTongTien.ResetText();
             txtTongTien.Text = "0";
+            tongTien = 0;
         }
 
         private void txtDonGia_TextChanged(object sender, EventArgs e)
@@ -158,6 +191,7 @@ namespace LibraryManagement
                             string maSach = row.Cells["MaSach"].Value.ToString();
                             int maTacGia = Int32.Parse(row.Cells["MaTacGia"].Value.ToString());
                             int maNxb = Int32.Parse(row.Cells["MaNXB"].Value.ToString());
+
                             decimal donGia = Decimal.Parse(row.Cells["DonGia"].Value.ToString());
 
                             h = dbPhieuNhap.ThemChiTietPhieuNhap(ref err, maDauSach, tenDauSach, maSach, maTacGia, maNxb, donGia);
@@ -216,13 +250,24 @@ namespace LibraryManagement
                 txtSoDau.Enabled = false;
                 txtSoCuoi.Enabled = false;
                 txtMaSach.Enabled = true;
+                txtSoDau.ResetText();
+                txtSoCuoi.ResetText();
             }
             else
             {
                 txtSoDau.Enabled = true;
                 txtSoCuoi.Enabled = true;
                 txtMaSach.Enabled = false;
+                txtSoDau.ResetText();
+                txtSoCuoi.ResetText();
             }
+        }
+
+        private void dgvCT_PhieuNhap_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            decimal giaTriXoa = Convert.ToDecimal(e.Row.Cells["DonGia"].Value);
+            tongTien -= giaTriXoa;
+            txtTongTien.Text = tongTien.ToString();
         }
     }
     public class DataItem

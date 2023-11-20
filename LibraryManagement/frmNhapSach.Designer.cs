@@ -37,6 +37,7 @@
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbMethodCheck = new System.Windows.Forms.CheckBox();
             this.txtSoCuoi = new System.Windows.Forms.TextBox();
             this.txtSoDau = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -60,13 +61,13 @@
             this.btnTaoPhieuNhap = new System.Windows.Forms.Button();
             this.btnPhieuNhap = new System.Windows.Forms.Button();
             this.btnCTPhieuNhap = new System.Windows.Forms.Button();
-            this.cbMethodCheck = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCT_PhieuNhap)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvCT_PhieuNhap
             // 
+            this.dgvCT_PhieuNhap.AllowUserToAddRows = false;
             this.dgvCT_PhieuNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCT_PhieuNhap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDauSach,
@@ -77,15 +78,18 @@
             this.DonGia});
             this.dgvCT_PhieuNhap.Location = new System.Drawing.Point(12, 12);
             this.dgvCT_PhieuNhap.Name = "dgvCT_PhieuNhap";
+            this.dgvCT_PhieuNhap.ReadOnly = true;
             this.dgvCT_PhieuNhap.RowHeadersWidth = 43;
             this.dgvCT_PhieuNhap.Size = new System.Drawing.Size(589, 340);
             this.dgvCT_PhieuNhap.TabIndex = 0;
+            this.dgvCT_PhieuNhap.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgvCT_PhieuNhap_UserDeletingRow);
             // 
             // MaDauSach
             // 
             this.MaDauSach.DataPropertyName = "maDauSach";
             this.MaDauSach.HeaderText = "Mã đầu sách";
             this.MaDauSach.Name = "MaDauSach";
+            this.MaDauSach.ReadOnly = true;
             this.MaDauSach.Width = 105;
             // 
             // TenDauSach
@@ -93,6 +97,7 @@
             this.TenDauSach.DataPropertyName = "tenDauSach";
             this.TenDauSach.HeaderText = "Tên DS";
             this.TenDauSach.Name = "TenDauSach";
+            this.TenDauSach.ReadOnly = true;
             this.TenDauSach.Width = 105;
             // 
             // MaSach
@@ -100,6 +105,7 @@
             this.MaSach.DataPropertyName = "maSach";
             this.MaSach.HeaderText = "Mã sách";
             this.MaSach.Name = "MaSach";
+            this.MaSach.ReadOnly = true;
             this.MaSach.Width = 105;
             // 
             // MaTacGia
@@ -107,6 +113,7 @@
             this.MaTacGia.DataPropertyName = "maTacGia";
             this.MaTacGia.HeaderText = "Tác giả";
             this.MaTacGia.Name = "MaTacGia";
+            this.MaTacGia.ReadOnly = true;
             this.MaTacGia.Width = 105;
             // 
             // MaNXB
@@ -114,6 +121,7 @@
             this.MaNXB.DataPropertyName = "maNxb";
             this.MaNXB.HeaderText = "NXB";
             this.MaNXB.Name = "MaNXB";
+            this.MaNXB.ReadOnly = true;
             this.MaNXB.Width = 105;
             // 
             // DonGia
@@ -121,6 +129,7 @@
             this.DonGia.DataPropertyName = "DonGia";
             this.DonGia.HeaderText = "Đơn giá";
             this.DonGia.Name = "DonGia";
+            this.DonGia.ReadOnly = true;
             this.DonGia.Width = 105;
             // 
             // label1
@@ -157,6 +166,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(358, 381);
             this.panel1.TabIndex = 2;
+            // 
+            // cbMethodCheck
+            // 
+            this.cbMethodCheck.AutoSize = true;
+            this.cbMethodCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMethodCheck.Location = new System.Drawing.Point(242, 185);
+            this.cbMethodCheck.Name = "cbMethodCheck";
+            this.cbMethodCheck.Size = new System.Drawing.Size(89, 22);
+            this.cbMethodCheck.TabIndex = 17;
+            this.cbMethodCheck.Text = "Thủ công";
+            this.cbMethodCheck.UseVisualStyleBackColor = true;
+            this.cbMethodCheck.CheckedChanged += new System.EventHandler(this.cbMethodCheck_CheckedChanged);
             // 
             // txtSoCuoi
             // 
@@ -410,18 +431,6 @@
             this.btnCTPhieuNhap.Text = "CT Phiếu nhập";
             this.btnCTPhieuNhap.UseVisualStyleBackColor = false;
             this.btnCTPhieuNhap.Click += new System.EventHandler(this.btnCTPhieuNhap_Click);
-            // 
-            // cbMethodCheck
-            // 
-            this.cbMethodCheck.AutoSize = true;
-            this.cbMethodCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMethodCheck.Location = new System.Drawing.Point(242, 185);
-            this.cbMethodCheck.Name = "cbMethodCheck";
-            this.cbMethodCheck.Size = new System.Drawing.Size(89, 22);
-            this.cbMethodCheck.TabIndex = 17;
-            this.cbMethodCheck.Text = "Thủ công";
-            this.cbMethodCheck.UseVisualStyleBackColor = true;
-            this.cbMethodCheck.CheckedChanged += new System.EventHandler(this.cbMethodCheck_CheckedChanged);
             // 
             // frmNhapSach
             // 

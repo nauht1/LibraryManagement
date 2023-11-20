@@ -75,14 +75,13 @@ namespace LibraryManagement
                             for (int u = soDau; u <= soCuoi; u++)
                             {
                                 string newMaSach;
-                                if (u >10)
+                                if (u >= 10)
                                 {
                                     newMaSach = $"{maDauSach}-{u}";
 
-                                }    
+                                }
                                 else
                                     newMaSach = $"{maDauSach}-0{u}";
-
                                 DataItem newItem = new DataItem(maDauSach, tenDauSach, newMaSach, maTacGia, maNxb, donGia);
                                 dataList.Add(newItem);
 
@@ -208,6 +207,22 @@ namespace LibraryManagement
             frm.dgvPhieuNhap.DataSource = dtCT_PhieuNhap;
             frm.dgvPhieuNhap.AutoResizeColumns();
             frm.ShowDialog();
+        }
+
+        private void cbMethodCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbMethodCheck.Checked == true)
+            {
+                txtSoDau.Enabled = false;
+                txtSoCuoi.Enabled = false;
+                txtMaSach.Enabled = true;
+            }
+            else
+            {
+                txtSoDau.Enabled = true;
+                txtSoCuoi.Enabled = true;
+                txtMaSach.Enabled = false;
+            }
         }
     }
     public class DataItem

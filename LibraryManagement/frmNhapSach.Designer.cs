@@ -60,6 +60,7 @@
             this.btnTaoPhieuNhap = new System.Windows.Forms.Button();
             this.btnPhieuNhap = new System.Windows.Forms.Button();
             this.btnCTPhieuNhap = new System.Windows.Forms.Button();
+            this.cbMethodCheck = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCT_PhieuNhap)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -128,13 +129,14 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 20);
+            this.label1.Size = new System.Drawing.Size(105, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã đầu sách";
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cbMethodCheck);
             this.panel1.Controls.Add(this.txtSoCuoi);
             this.panel1.Controls.Add(this.txtSoDau);
             this.panel1.Controls.Add(this.label10);
@@ -159,42 +161,42 @@
             // txtSoCuoi
             // 
             this.txtSoCuoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSoCuoi.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoCuoi.Location = new System.Drawing.Point(218, 210);
+            this.txtSoCuoi.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoCuoi.Location = new System.Drawing.Point(248, 220);
             this.txtSoCuoi.Multiline = true;
             this.txtSoCuoi.Name = "txtSoCuoi";
-            this.txtSoCuoi.Size = new System.Drawing.Size(113, 34);
+            this.txtSoCuoi.Size = new System.Drawing.Size(83, 23);
             this.txtSoCuoi.TabIndex = 16;
             // 
             // txtSoDau
             // 
             this.txtSoDau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSoDau.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoDau.Location = new System.Drawing.Point(48, 210);
+            this.txtSoDau.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoDau.Location = new System.Drawing.Point(112, 220);
             this.txtSoDau.Multiline = true;
             this.txtSoDau.Name = "txtSoDau";
-            this.txtSoDau.Size = new System.Drawing.Size(107, 34);
+            this.txtSoDau.Size = new System.Drawing.Size(83, 23);
             this.txtSoDau.TabIndex = 15;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(173, 212);
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(201, 222);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 20);
+            this.label10.Size = new System.Drawing.Size(44, 21);
             this.label10.TabIndex = 14;
             this.label10.Text = "đến:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(14, 212);
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(66, 222);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 20);
+            this.label9.Size = new System.Drawing.Size(37, 21);
             this.label9.TabIndex = 13;
-            this.label9.Text = "từ:";
+            this.label9.Text = "Từ:";
             // 
             // label7
             // 
@@ -202,7 +204,7 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(13, 337);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 20);
+            this.label7.Size = new System.Drawing.Size(69, 21);
             this.label7.TabIndex = 12;
             this.label7.Text = "Đơn giá";
             // 
@@ -245,7 +247,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(13, 298);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 20);
+            this.label6.Size = new System.Drawing.Size(48, 21);
             this.label6.TabIndex = 8;
             this.label6.Text = "NXB";
             // 
@@ -255,18 +257,19 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(13, 265);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 20);
+            this.label5.Size = new System.Drawing.Size(65, 21);
             this.label5.TabIndex = 7;
             this.label5.Text = "Tác giả";
             // 
             // txtMaSach
             // 
             this.txtMaSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaSach.Enabled = false;
             this.txtMaSach.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSach.Location = new System.Drawing.Point(124, 119);
             this.txtMaSach.Multiline = true;
             this.txtMaSach.Name = "txtMaSach";
-            this.txtMaSach.Size = new System.Drawing.Size(207, 70);
+            this.txtMaSach.Size = new System.Drawing.Size(207, 60);
             this.txtMaSach.TabIndex = 6;
             // 
             // txtTenDauSach
@@ -295,7 +298,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(13, 119);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.Size = new System.Drawing.Size(73, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "Mã sách";
             // 
@@ -305,7 +308,7 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 20);
+            this.label3.Size = new System.Drawing.Size(110, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tên đầu sách";
             // 
@@ -316,7 +319,7 @@
             this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label2.Location = new System.Drawing.Point(633, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 21);
+            this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Thông tin";
             // 
@@ -339,7 +342,7 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(399, 367);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 20);
+            this.label8.Size = new System.Drawing.Size(50, 21);
             this.label8.TabIndex = 13;
             this.label8.Text = "Tổng";
             // 
@@ -408,6 +411,18 @@
             this.btnCTPhieuNhap.UseVisualStyleBackColor = false;
             this.btnCTPhieuNhap.Click += new System.EventHandler(this.btnCTPhieuNhap_Click);
             // 
+            // cbMethodCheck
+            // 
+            this.cbMethodCheck.AutoSize = true;
+            this.cbMethodCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMethodCheck.Location = new System.Drawing.Point(242, 185);
+            this.cbMethodCheck.Name = "cbMethodCheck";
+            this.cbMethodCheck.Size = new System.Drawing.Size(89, 22);
+            this.cbMethodCheck.TabIndex = 17;
+            this.cbMethodCheck.Text = "Thủ công";
+            this.cbMethodCheck.UseVisualStyleBackColor = true;
+            this.cbMethodCheck.CheckedChanged += new System.EventHandler(this.cbMethodCheck_CheckedChanged);
+            // 
             // frmNhapSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,5 +487,6 @@
         private System.Windows.Forms.TextBox txtSoDau;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckBox cbMethodCheck;
     }
 }

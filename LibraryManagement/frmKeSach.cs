@@ -84,6 +84,12 @@ namespace LibraryManagement
             try
             {
                 int r = dgvKeSach.CurrentCell.RowIndex;
+
+                if (dgvKeSach.Rows[r].Cells["MaKeSach"].Value.ToString() == "0")
+                {
+                    MessageBox.Show("Không thể xóa kệ 0!!!!");
+                    return;
+                }
                 int maKe = Int32.Parse(dgvKeSach.Rows[r].Cells["MaKeSach"].Value.ToString());
 
                 DialogResult traloi;

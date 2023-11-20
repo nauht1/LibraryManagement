@@ -45,9 +45,9 @@
             // btnDong
             // 
             this.btnDong.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDong.Location = new System.Drawing.Point(535, 449);
+            this.btnDong.Location = new System.Drawing.Point(653, 449);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(90, 35);
+            this.btnDong.Size = new System.Drawing.Size(109, 35);
             this.btnDong.TabIndex = 17;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // btnReload
             // 
             this.btnReload.Font = new System.Drawing.Font("Sitka Heading", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReload.Location = new System.Drawing.Point(535, 20);
+            this.btnReload.Location = new System.Drawing.Point(653, 20);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(90, 35);
+            this.btnReload.Size = new System.Drawing.Size(109, 35);
             this.btnReload.TabIndex = 18;
             this.btnReload.Text = "Reload";
             this.btnReload.UseVisualStyleBackColor = true;
@@ -96,11 +96,11 @@
             this.LyDo,
             this.TienPhi});
             this.dgvCT_PhieuViPham.Location = new System.Drawing.Point(20, 87);
-            this.dgvCT_PhieuViPham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCT_PhieuViPham.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCT_PhieuViPham.Name = "dgvCT_PhieuViPham";
             this.dgvCT_PhieuViPham.RowHeadersWidth = 51;
             this.dgvCT_PhieuViPham.RowTemplate.Height = 24;
-            this.dgvCT_PhieuViPham.Size = new System.Drawing.Size(605, 348);
+            this.dgvCT_PhieuViPham.Size = new System.Drawing.Size(742, 348);
             this.dgvCT_PhieuViPham.TabIndex = 89;
             // 
             // MaPhieu
@@ -155,14 +155,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 500);
+            this.ClientSize = new System.Drawing.Size(783, 500);
             this.Controls.Add(this.dgvCT_PhieuViPham);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.cboMaPhieuMuon);
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.btnDong);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCT_PhieuViPham";

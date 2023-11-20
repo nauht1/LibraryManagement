@@ -83,11 +83,9 @@ namespace LibraryManagement
                 {
                     MessageBox.Show("Đã thêm xong!");
                     LoadData();
-
-
                 }
             }
-            catch (SqlException)
+            catch (Exception)
             {
                 MessageBox.Show("Không thêm được. Lỗi rồi!");
             }
@@ -100,17 +98,25 @@ namespace LibraryManagement
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            int maPhieuMuon = Convert.ToInt32(cboMaPhieuMuon.Text);
+            try
+            {
 
-            // Lọc và tạo một DataView từ DataTable hiện tại
-            DataView dv = new DataView(dtPhieuViPham);
-            dv.RowFilter = $"MaPhieuMuon = {maPhieuMuon}";
+                int maPhieuMuon = Convert.ToInt32(cboMaPhieuMuon.Text);
 
-            // Sử dụng DataView để cập nhật DataGridView
-            dgvChonThongTin.DataSource = dv.ToTable();
+                // Lọc và tạo một DataView từ DataTable hiện tại
+                DataView dv = new DataView(dtPhieuViPham);
+                dv.RowFilter = $"MaPhieuMuon = {maPhieuMuon}";
 
-            // Tự động điều chỉnh kích thước cột
-            dgvChonThongTin.AutoResizeColumns();
+                // Sử dụng DataView để cập nhật DataGridView
+                dgvChonThongTin.DataSource = dv.ToTable();
+
+                // Tự động điều chỉnh kích thước cột
+                dgvChonThongTin.AutoResizeColumns();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng chọn thông tin!");
+            }
         }
     }
 }

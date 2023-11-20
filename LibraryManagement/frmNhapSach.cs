@@ -39,40 +39,73 @@ namespace LibraryManagement
             string tenDauSach = txtTenDauSach.Text;
             string maSach = txtMaSach.Text;
             string donGiaTxt = txtDonGia.Text;
-            if (!string.IsNullOrEmpty(maDauSach) && !string.IsNullOrEmpty(tenDauSach) && !string.IsNullOrEmpty(maSach) 
+            int soDau, soCuoi;
+
+            if (!string.IsNullOrEmpty(maDauSach) && !string.IsNullOrEmpty(tenDauSach) 
                 && !string.IsNullOrEmpty(cboTacGia.Text) && !string.IsNullOrEmpty(cboNXB.Text) && !string.IsNullOrEmpty(donGiaTxt))
             {
+                    
                 int maTacGia = (int)cboTacGia.SelectedValue;
                 int maNxb = (int)cboNXB.SelectedValue;
+                decimal donGia = Decimal.Parse(donGiaTxt);
                 try
                 {
-                    string[] maSachArr = maSach.Split(',');
-                    decimal donGia = Decimal.Parse(donGiaTxt);
-                    for (int i = 0; i < maSachArr.Length; i++)
+                    if (!string.IsNullOrEmpty(maSach))
                     {
-                        maSachArr[i] = maSachArr[i].Trim();
+                        string[] maSachArr = maSach.Split(',');
+                        for (int i = 0; i < maSachArr.Length; i++)
+                        {
+                            maSachArr[i] = maSachArr[i].Trim();
+                        }
+                        foreach (string ms in maSachArr)
+                        {
+                            DataItem newItem = new DataItem(maDauSach, tenDauSach, ms, maTacGia, maNxb, donGia);
+                            dataList.Add(newItem);
+
+                            tongTien += donGia;
+                            txtTongTien.Text = tongTien.ToString();
+                        }
                     }
-                    foreach (string ms in maSachArr)
+
+                    if (int.TryParse(txtSoDau.Text, out soDau) && int.TryParse(txtSoCuoi.Text, out soCuoi))
                     {
-                        DataItem newItem = new DataItem(maDauSach, tenDauSach, ms, maTacGia, maNxb, donGia);
-                        dataList.Add(newItem);
+                        Console.WriteLine(soDau.ToString(), soCuoi.ToString());
+                        if (soDau > 0 && soDau < soCuoi)
+                        {
+                            for (int u = soDau; u <= soCuoi; u++)
+                            {
+                                string newMaSach;
+                                if (u >10)
+                                {
+                                    newMaSach = $"{maDauSach}-{u}";
 
-                        txtMaDauSach.Text = string.Empty;
-                        txtTenDauSach.Text = string.Empty;
-                        txtMaSach.Text = string.Empty;
-                        cboTacGia.SelectedIndex = -1;
-                        cboNXB.SelectedIndex = -1;
-                        txtDonGia.Text = string.Empty;
+                                }    
+                                else
+                                    newMaSach = $"{maDauSach}-0{u}";
 
-                        tongTien += donGia;
-                        txtTongTien.Text = tongTien.ToString();
-                    }
+                                DataItem newItem = new DataItem(maDauSach, tenDauSach, newMaSach, maTacGia, maNxb, donGia);
+                                dataList.Add(newItem);
+
+                                tongTien += donGia;
+                                txtTongTien.Text = tongTien.ToString();
+                            }
+                        }
+                    }    
+                    txtSoDau.Text = string.Empty;
+                    txtSoCuoi.Text = string.Empty;
+                    txtMaDauSach.Text = string.Empty;
+                    txtTenDauSach.Text = string.Empty;
+                    txtMaSach.Text = string.Empty;
+                    cboTacGia.SelectedIndex = -1;
+                    cboNXB.SelectedIndex = -1;
+                    txtDonGia.Text = string.Empty;
                 }
                 catch
                 {
                     MessageBox.Show("Lỗi!!");
                 }
             }
+
         }
 
         private void frmNhapSach_Load(object sender, EventArgs e)

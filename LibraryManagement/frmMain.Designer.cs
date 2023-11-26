@@ -48,6 +48,7 @@
             this.tileMuonTraSach = new MetroFramework.Controls.MetroTile();
             this.tileTheLoai = new MetroFramework.Controls.MetroTile();
             this.tileQLSach = new MetroFramework.Controls.MetroTile();
+            this.tileNXB = new MetroFramework.Controls.MetroTile();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,6 +60,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnDangXuat);
             this.panel1.Controls.Add(this.btnThongTin);
+            this.panel1.Controls.Add(this.tileTaiKhoan);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-3, 5);
@@ -156,15 +158,16 @@
             this.tileTaiKhoan.BackColor = System.Drawing.Color.SteelBlue;
             this.tileTaiKhoan.CustomBackground = true;
             this.tileTaiKhoan.CustomForeColor = true;
-            this.tileTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.tileTaiKhoan.Location = new System.Drawing.Point(704, 407);
+            this.tileTaiKhoan.ForeColor = System.Drawing.Color.Black;
+            this.tileTaiKhoan.Location = new System.Drawing.Point(26, 366);
             this.tileTaiKhoan.Name = "tileTaiKhoan";
-            this.tileTaiKhoan.Size = new System.Drawing.Size(140, 143);
+            this.tileTaiKhoan.Size = new System.Drawing.Size(217, 58);
             this.tileTaiKhoan.TabIndex = 78;
             this.tileTaiKhoan.Text = "Quản lý tài khoản";
-            this.tileTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tileTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tileTaiKhoan.TileImage = ((System.Drawing.Image)(resources.GetObject("tileTaiKhoan.TileImage")));
-            this.tileTaiKhoan.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileTaiKhoan.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tileTaiKhoan.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.tileTaiKhoan.UseTileImage = true;
             this.tileTaiKhoan.Click += new System.EventHandler(this.tileTaiKhoan_Click);
             // 
@@ -242,9 +245,9 @@
             this.tileNhanVien.CustomBackground = true;
             this.tileNhanVien.CustomForeColor = true;
             this.tileNhanVien.ForeColor = System.Drawing.Color.White;
-            this.tileNhanVien.Location = new System.Drawing.Point(558, 407);
+            this.tileNhanVien.Location = new System.Drawing.Point(704, 408);
             this.tileNhanVien.Name = "tileNhanVien";
-            this.tileNhanVien.Size = new System.Drawing.Size(140, 143);
+            this.tileNhanVien.Size = new System.Drawing.Size(140, 139);
             this.tileNhanVien.TabIndex = 72;
             this.tileNhanVien.Text = "Quản lý nhân viên";
             this.tileNhanVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -340,15 +343,32 @@
             this.tileQLSach.UseTileImage = true;
             this.tileQLSach.Click += new System.EventHandler(this.tileQLSach_Click);
             // 
+            // tileNXB
+            // 
+            this.tileNXB.BackColor = System.Drawing.Color.SteelBlue;
+            this.tileNXB.CustomBackground = true;
+            this.tileNXB.CustomForeColor = true;
+            this.tileNXB.ForeColor = System.Drawing.Color.White;
+            this.tileNXB.Location = new System.Drawing.Point(558, 408);
+            this.tileNXB.Name = "tileNXB";
+            this.tileNXB.Size = new System.Drawing.Size(140, 140);
+            this.tileNXB.TabIndex = 82;
+            this.tileNXB.Text = "Quản lý NXB";
+            this.tileNXB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tileNXB.TileImage = ((System.Drawing.Image)(resources.GetObject("tileNXB.TileImage")));
+            this.tileNXB.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileNXB.UseTileImage = true;
+            this.tileNXB.Click += new System.EventHandler(this.tileNXB_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(862, 568);
+            this.Controls.Add(this.tileNXB);
             this.Controls.Add(this.tileQLSach);
             this.Controls.Add(this.tileTheLoai);
             this.Controls.Add(this.tilePhieuNhap);
-            this.Controls.Add(this.tileTaiKhoan);
             this.Controls.Add(this.tileTacGia);
             this.Controls.Add(this.tileKeSach);
             this.Controls.Add(this.tileTheThuVien);
@@ -396,5 +416,6 @@
         public MetroFramework.Controls.MetroTile tileMuonTraSach;
         public MetroFramework.Controls.MetroTile tileTheLoai;
         public MetroFramework.Controls.MetroTile tileQLSach;
+        public MetroFramework.Controls.MetroTile tileNXB;
     }
 }

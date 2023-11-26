@@ -141,6 +141,12 @@
     <Compile Include="frmQLMuonTra.Designer.cs">
       <DependentUpon>frmQLMuonTra.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNXB.Designer.cs">
+      <DependentUpon>frmQLNXB.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLTheThuVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLMuonTra.resx">
       <DependentUpon>frmQLMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNXB.resx">
+      <DependentUpon>frmQLNXB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLTheThuVien.resx">
       <DependentUpon>frmQLTheThuVien.cs</DependentUpon>

@@ -111,5 +111,11 @@ namespace LibraryManagement
             frmQuanLySach frm = new frmQuanLySach();   
             frm.Show();
         }
+
+        private void tileNXB_Click(object sender, EventArgs e)
+        {
+            frmQLNXB frm = new frmQLNXB();
+            frm.Show();
+        }
     }
 }

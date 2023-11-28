@@ -42,7 +42,7 @@
             this.MaDauSach,
             this.TenDauSach});
             this.dgvDauSach.Location = new System.Drawing.Point(9, 10);
-            this.dgvDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDauSach.Name = "dgvDauSach";
             this.dgvDauSach.RowHeadersWidth = 51;
             this.dgvDauSach.RowTemplate.Height = 24;
@@ -84,12 +84,12 @@
             this.ClientSize = new System.Drawing.Size(729, 366);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.dgvDauSach);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmViewDauSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmViewDauSach";
+            this.Text = "Thông tin đầu sách";
             this.Load += new System.EventHandler(this.frmViewDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauSach)).EndInit();
             this.ResumeLayout(false);

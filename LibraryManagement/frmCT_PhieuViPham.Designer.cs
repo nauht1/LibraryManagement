@@ -167,7 +167,7 @@
             this.MinimizeBox = false;
             this.Name = "frmCT_PhieuViPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCT_PhieuViPham";
+            this.Text = "Chi tiết phiếu vi phạm";
             this.Load += new System.EventHandler(this.frmCT_PhieuViPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCT_PhieuViPham)).EndInit();
             this.ResumeLayout(false);

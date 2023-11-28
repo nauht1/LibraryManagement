@@ -72,7 +72,7 @@
             this.cboTenKeSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTenKeSach.FormattingEnabled = true;
             this.cboTenKeSach.Location = new System.Drawing.Point(84, 15);
-            this.cboTenKeSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTenKeSach.Margin = new System.Windows.Forms.Padding(2);
             this.cboTenKeSach.Name = "cboTenKeSach";
             this.cboTenKeSach.Size = new System.Drawing.Size(182, 28);
             this.cboTenKeSach.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.label3.Font = new System.Drawing.Font("Sitka Heading", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(14, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 28);
+            this.label3.Size = new System.Drawing.Size(60, 26);
             this.label3.TabIndex = 3;
             this.label3.Text = "Tên kệ";
             // 
@@ -136,7 +136,7 @@
             this.cboChuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboChuyen.FormattingEnabled = true;
             this.cboChuyen.Location = new System.Drawing.Point(625, 94);
-            this.cboChuyen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboChuyen.Margin = new System.Windows.Forms.Padding(2);
             this.cboChuyen.Name = "cboChuyen";
             this.cboChuyen.Size = new System.Drawing.Size(181, 28);
             this.cboChuyen.TabIndex = 95;
@@ -156,7 +156,7 @@
             // 
             this.dgvMaSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaSach.Location = new System.Drawing.Point(625, 167);
-            this.dgvMaSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvMaSach.Margin = new System.Windows.Forms.Padding(2);
             this.dgvMaSach.Name = "dgvMaSach";
             this.dgvMaSach.RowHeadersWidth = 51;
             this.dgvMaSach.RowTemplate.Height = 24;
@@ -179,12 +179,12 @@
             this.Controls.Add(this.cboTenKeSach);
             this.Controls.Add(this.dgvSach);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmQuanLySach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmQuanLySach";
+            this.Text = "Quản lý sách";
             this.Load += new System.EventHandler(this.frmQuanLySach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaSach)).EndInit();

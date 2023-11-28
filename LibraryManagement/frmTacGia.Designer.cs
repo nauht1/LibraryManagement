@@ -61,7 +61,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label7.Location = new System.Drawing.Point(711, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 22);
+            this.label7.Size = new System.Drawing.Size(84, 21);
             this.label7.TabIndex = 19;
             this.label7.Text = "Thông tin";
             // 
@@ -178,7 +178,7 @@
             this.txtQueQuan.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQueQuan.Location = new System.Drawing.Point(117, 144);
             this.txtQueQuan.Name = "txtQueQuan";
-            this.txtQueQuan.Size = new System.Drawing.Size(214, 28);
+            this.txtQueQuan.Size = new System.Drawing.Size(214, 27);
             this.txtQueQuan.TabIndex = 17;
             // 
             // label4
@@ -187,7 +187,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(21, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 21);
+            this.label4.Size = new System.Drawing.Size(79, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Quê quán";
             // 
@@ -197,7 +197,7 @@
             this.txtNgaySinh.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgaySinh.Location = new System.Drawing.Point(117, 102);
             this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(214, 28);
+            this.txtNgaySinh.Size = new System.Drawing.Size(214, 27);
             this.txtNgaySinh.TabIndex = 15;
             // 
             // txtMaTacGia
@@ -207,7 +207,7 @@
             this.txtMaTacGia.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaTacGia.Location = new System.Drawing.Point(118, 18);
             this.txtMaTacGia.Name = "txtMaTacGia";
-            this.txtMaTacGia.Size = new System.Drawing.Size(214, 28);
+            this.txtMaTacGia.Size = new System.Drawing.Size(214, 27);
             this.txtMaTacGia.TabIndex = 3;
             // 
             // label1
@@ -216,7 +216,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(22, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 21);
+            this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã tác giả";
             // 
@@ -226,7 +226,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(22, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 21);
+            this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Họ tên";
             // 
@@ -236,7 +236,7 @@
             this.txtTenTacGia.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenTacGia.Location = new System.Drawing.Point(118, 60);
             this.txtTenTacGia.Name = "txtTenTacGia";
-            this.txtTenTacGia.Size = new System.Drawing.Size(214, 28);
+            this.txtTenTacGia.Size = new System.Drawing.Size(214, 27);
             this.txtTenTacGia.TabIndex = 3;
             // 
             // label3
@@ -245,7 +245,7 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 21);
+            this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Ngày sinh";
             // 
@@ -317,7 +317,7 @@
             this.MinimizeBox = false;
             this.Name = "frmTacGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTacGia";
+            this.Text = "Tac Gia";
             this.Load += new System.EventHandler(this.frmTacGia_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

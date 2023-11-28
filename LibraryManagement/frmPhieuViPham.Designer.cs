@@ -65,7 +65,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label7.Location = new System.Drawing.Point(711, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 22);
+            this.label7.Size = new System.Drawing.Size(84, 21);
             this.label7.TabIndex = 19;
             this.label7.Text = "Thông tin";
             // 
@@ -124,7 +124,7 @@
             this.txtTienPhi.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTienPhi.Location = new System.Drawing.Point(146, 302);
             this.txtTienPhi.Name = "txtTienPhi";
-            this.txtTienPhi.Size = new System.Drawing.Size(214, 28);
+            this.txtTienPhi.Size = new System.Drawing.Size(214, 27);
             this.txtTienPhi.TabIndex = 31;
             // 
             // label8
@@ -133,7 +133,7 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(11, 304);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 21);
+            this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 30;
             this.label8.Text = "Tiền phí";
             // 
@@ -144,7 +144,7 @@
             this.txtLyDo.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLyDo.Location = new System.Drawing.Point(146, 261);
             this.txtLyDo.Name = "txtLyDo";
-            this.txtLyDo.Size = new System.Drawing.Size(214, 28);
+            this.txtLyDo.Size = new System.Drawing.Size(214, 27);
             this.txtLyDo.TabIndex = 29;
             // 
             // label6
@@ -153,7 +153,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(11, 262);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 21);
+            this.label6.Size = new System.Drawing.Size(52, 20);
             this.label6.TabIndex = 28;
             this.label6.Text = "Lý do";
             // 
@@ -164,7 +164,7 @@
             this.txtNgayLap.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayLap.Location = new System.Drawing.Point(146, 214);
             this.txtNgayLap.Name = "txtNgayLap";
-            this.txtNgayLap.Size = new System.Drawing.Size(214, 28);
+            this.txtNgayLap.Size = new System.Drawing.Size(214, 27);
             this.txtNgayLap.TabIndex = 27;
             // 
             // label5
@@ -173,7 +173,7 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(11, 216);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 21);
+            this.label5.Size = new System.Drawing.Size(80, 20);
             this.label5.TabIndex = 26;
             this.label5.Text = "Ngày Lập";
             // 
@@ -184,7 +184,7 @@
             this.txtLoaiViPham.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLoaiViPham.Location = new System.Drawing.Point(146, 169);
             this.txtLoaiViPham.Name = "txtLoaiViPham";
-            this.txtLoaiViPham.Size = new System.Drawing.Size(214, 28);
+            this.txtLoaiViPham.Size = new System.Drawing.Size(214, 27);
             this.txtLoaiViPham.TabIndex = 25;
             // 
             // label4
@@ -193,7 +193,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(11, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 21);
+            this.label4.Size = new System.Drawing.Size(104, 20);
             this.label4.TabIndex = 24;
             this.label4.Text = "Loại vi phạm";
             // 
@@ -204,7 +204,7 @@
             this.txtMaNhanVien.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNhanVien.Location = new System.Drawing.Point(146, 120);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
-            this.txtMaNhanVien.Size = new System.Drawing.Size(214, 28);
+            this.txtMaNhanVien.Size = new System.Drawing.Size(214, 27);
             this.txtMaNhanVien.TabIndex = 23;
             // 
             // label3
@@ -213,7 +213,7 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(11, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 21);
+            this.label3.Size = new System.Drawing.Size(108, 20);
             this.label3.TabIndex = 22;
             this.label3.Text = "Mã nhân viên";
             // 
@@ -224,7 +224,7 @@
             this.txtMaPhieuMuon.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaPhieuMuon.Location = new System.Drawing.Point(146, 70);
             this.txtMaPhieuMuon.Name = "txtMaPhieuMuon";
-            this.txtMaPhieuMuon.Size = new System.Drawing.Size(214, 28);
+            this.txtMaPhieuMuon.Size = new System.Drawing.Size(214, 27);
             this.txtMaPhieuMuon.TabIndex = 21;
             // 
             // label2
@@ -233,7 +233,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(11, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 21);
+            this.label2.Size = new System.Drawing.Size(125, 20);
             this.label2.TabIndex = 20;
             this.label2.Text = "Mã phiếu mượn";
             // 
@@ -244,7 +244,7 @@
             this.txtMaPhieu.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaPhieu.Location = new System.Drawing.Point(146, 25);
             this.txtMaPhieu.Name = "txtMaPhieu";
-            this.txtMaPhieu.Size = new System.Drawing.Size(214, 28);
+            this.txtMaPhieu.Size = new System.Drawing.Size(214, 27);
             this.txtMaPhieu.TabIndex = 19;
             // 
             // label1
@@ -253,7 +253,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 21);
+            this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 18;
             this.label1.Text = "Mã phiếu";
             // 
@@ -350,12 +350,12 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvPhieuViPham);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPhieuViPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phieu Vi Pham";
+            this.Text = "Phiếu vi phạm";
             this.Load += new System.EventHandler(this.frmPhieuViPham_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

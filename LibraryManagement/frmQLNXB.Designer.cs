@@ -57,7 +57,7 @@
             this.txtDiaChi.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Location = new System.Drawing.Point(118, 104);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(214, 28);
+            this.txtDiaChi.Size = new System.Drawing.Size(214, 27);
             this.txtDiaChi.TabIndex = 17;
             // 
             // label4
@@ -66,7 +66,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(22, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
+            this.label4.Size = new System.Drawing.Size(60, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Địa chỉ";
             // 
@@ -161,7 +161,7 @@
             this.txtMaNXB.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNXB.Location = new System.Drawing.Point(118, 18);
             this.txtMaNXB.Name = "txtMaNXB";
-            this.txtMaNXB.Size = new System.Drawing.Size(214, 28);
+            this.txtMaNXB.Size = new System.Drawing.Size(214, 27);
             this.txtMaNXB.TabIndex = 3;
             // 
             // label1
@@ -170,7 +170,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(22, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 21);
+            this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã NXB";
             // 
@@ -180,7 +180,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(22, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 21);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên NXB";
             // 
@@ -190,7 +190,7 @@
             this.txtTenNXB.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNXB.Location = new System.Drawing.Point(118, 60);
             this.txtTenNXB.Name = "txtTenNXB";
-            this.txtTenNXB.Size = new System.Drawing.Size(214, 28);
+            this.txtTenNXB.Size = new System.Drawing.Size(214, 27);
             this.txtTenNXB.TabIndex = 3;
             // 
             // label7
@@ -200,7 +200,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label7.Location = new System.Drawing.Point(522, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 22);
+            this.label7.Size = new System.Drawing.Size(84, 21);
             this.label7.TabIndex = 19;
             this.label7.Text = "Thông tin";
             // 
@@ -281,7 +281,7 @@
             this.MinimizeBox = false;
             this.Name = "frmQLNXB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmQLNXB";
+            this.Text = "Thông tin nhà xuất bản";
             this.Load += new System.EventHandler(this.frmQLNXB_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

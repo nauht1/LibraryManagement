@@ -89,7 +89,6 @@ namespace LibraryManagement
         private void btnThem_Click(object sender, EventArgs e)
         {
             Them = true;
-
             txtHoTen.Enabled = true;
             cboGioiTinh.Enabled = true;
             txtNgaySinh.Enabled = true;

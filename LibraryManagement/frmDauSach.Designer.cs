@@ -52,7 +52,7 @@
             this.MaDauSach,
             this.TenDauSach});
             this.dgvDauSach.Location = new System.Drawing.Point(9, 127);
-            this.dgvDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDauSach.Name = "dgvDauSach";
             this.dgvDauSach.RowHeadersWidth = 51;
             this.dgvDauSach.RowTemplate.Height = 24;
@@ -80,7 +80,7 @@
             // 
             this.clbTheLoai.FormattingEnabled = true;
             this.clbTheLoai.Location = new System.Drawing.Point(474, 127);
-            this.clbTheLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clbTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.clbTheLoai.Name = "clbTheLoai";
             this.clbTheLoai.Size = new System.Drawing.Size(174, 289);
             this.clbTheLoai.TabIndex = 1;
@@ -92,7 +92,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label7.Location = new System.Drawing.Point(28, 2);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 22);
+            this.label7.Size = new System.Drawing.Size(84, 21);
             this.label7.TabIndex = 24;
             this.label7.Text = "Thông tin";
             // 
@@ -115,7 +115,7 @@
             this.txtMaDauSach.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaDauSach.Location = new System.Drawing.Point(144, 20);
             this.txtMaDauSach.Name = "txtMaDauSach";
-            this.txtMaDauSach.Size = new System.Drawing.Size(293, 28);
+            this.txtMaDauSach.Size = new System.Drawing.Size(293, 27);
             this.txtMaDauSach.TabIndex = 3;
             // 
             // label1
@@ -124,7 +124,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 21);
+            this.label1.Size = new System.Drawing.Size(101, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã đầu sách";
             // 
@@ -134,7 +134,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(17, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 21);
+            this.label2.Size = new System.Drawing.Size(106, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên đầu sách";
             // 
@@ -144,7 +144,7 @@
             this.txtTenDauSach.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDauSach.Location = new System.Drawing.Point(144, 59);
             this.txtTenDauSach.Name = "txtTenDauSach";
-            this.txtTenDauSach.Size = new System.Drawing.Size(293, 28);
+            this.txtTenDauSach.Size = new System.Drawing.Size(293, 27);
             this.txtTenDauSach.TabIndex = 3;
             // 
             // btnChon
@@ -196,12 +196,12 @@
             this.Controls.Add(this.clbTheLoai);
             this.Controls.Add(this.dgvDauSach);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmDauSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDauSach";
+            this.Text = "Quản lý đầu sách";
             this.Load += new System.EventHandler(this.frmDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauSach)).EndInit();
             this.panel1.ResumeLayout(false);

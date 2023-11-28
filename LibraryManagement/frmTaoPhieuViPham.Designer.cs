@@ -57,7 +57,7 @@
             this.NgayHenTra,
             this.GiaHan});
             this.dgvChonThongTin.Location = new System.Drawing.Point(9, 10);
-            this.dgvChonThongTin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvChonThongTin.Margin = new System.Windows.Forms.Padding(2);
             this.dgvChonThongTin.Name = "dgvChonThongTin";
             this.dgvChonThongTin.RowHeadersWidth = 51;
             this.dgvChonThongTin.RowTemplate.Height = 24;
@@ -138,7 +138,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(707, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 21);
+            this.label1.Size = new System.Drawing.Size(108, 20);
             this.label1.TabIndex = 92;
             this.label1.Text = "Mã nhân viên";
             // 
@@ -148,7 +148,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(707, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 21);
+            this.label2.Size = new System.Drawing.Size(125, 20);
             this.label2.TabIndex = 93;
             this.label2.Text = "Mã phiếu mượn";
             // 
@@ -211,12 +211,12 @@
             this.Controls.Add(this.cboMaPhieuMuon);
             this.Controls.Add(this.dgvChonThongTin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmTaoPhieuViPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTaoPhieuViPham";
+            this.Text = "Tạo phiếu vi phạm";
             this.Load += new System.EventHandler(this.frmTaoPhieuViPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChonThongTin)).EndInit();
             this.ResumeLayout(false);

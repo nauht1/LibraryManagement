@@ -18,7 +18,7 @@ namespace BALayer
         }
         public DataSet LayTaiKhoanDangNhap()
         {
-            return db.ExecuteQueryDataSet("Select * from TaiKhoanDangNhap", CommandType.Text, null);
+            return db.ExecuteQueryDataSet("Select * from viewTaiKhoan", CommandType.Text, null);
         }
         public bool KiemTraTaiKhoan(ref string err, string username, string password)
         {

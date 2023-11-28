@@ -30,6 +30,7 @@
         {
             this.dgvTaiKhoan = new System.Windows.Forms.DataGridView();
             this.btnReset = new System.Windows.Forms.Button();
+            this.MaTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,6 +39,8 @@
             this.dgvTaiKhoan.AllowUserToAddRows = false;
             this.dgvTaiKhoan.AllowUserToDeleteRows = false;
             this.dgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTaiKhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaTaiKhoan});
             this.dgvTaiKhoan.Location = new System.Drawing.Point(12, 12);
             this.dgvTaiKhoan.Name = "dgvTaiKhoan";
             this.dgvTaiKhoan.ReadOnly = true;
@@ -57,6 +60,14 @@
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // MaTaiKhoan
+            // 
+            this.MaTaiKhoan.DataPropertyName = "MaTaiKhoan";
+            this.MaTaiKhoan.HeaderText = "Mã TK";
+            this.MaTaiKhoan.Name = "MaTaiKhoan";
+            this.MaTaiKhoan.ReadOnly = true;
+            this.MaTaiKhoan.Width = 105;
             // 
             // frmTaiKhoan
             // 
@@ -80,5 +91,6 @@
 
         private System.Windows.Forms.DataGridView dgvTaiKhoan;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaTaiKhoan;
     }
 }
